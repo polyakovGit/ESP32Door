@@ -1,0 +1,875 @@
+mI (34) boot: ch�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15532
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.2-dirty 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jun 23 2025 12:13:59[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v3.1[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (42) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (94) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=25954h (153940) map[0m
+[0;32mI (156) esp_image: segment 1: paddr=0003597c vaddr=3ffb0000 size=03c74h ( 15476) load[0m
+[0;32mI (162) esp_image: segment 2: paddr=000395f8 vaddr=40080000 size=06a20h ( 27168) load[0m
+[0;32mI (172) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=93570h (603504) map[0m
+[0;32mI (379) esp_image: segment 4: paddr=000d3598 vaddr=40086a20 size=0fe88h ( 65160) load[0m
+[0;32mI (417) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (417) boot: Disabling RNG early entropy source...[0m
+[0;32mI (428) cpu_start: Multicore app[0m
+[0;32mI (437) cpu_start: Pro cpu start user code[0m
+[0;32mI (437) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (437) cpu_start: Application information:[0m
+[0;32mI (440) cpu_start: Project name:     app-template[0m
+[0;32mI (445) cpu_start: App version:      1[0m
+[0;32mI (450) cpu_start: Compile time:     Jun 23 2025 12:46:55[0m
+[0;32mI (456) cpu_start: ELF file SHA256:  ff16ff1f7...[0m
+[0;32mI (461) cpu_start: ESP-IDF:          v5.2-dirty[0m
+[0;32mI (466) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (471) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (476) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (481) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (488) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (494) heap_init: At 3FFB86C8 len 00027938 (158 KiB): DRAM[0m
+[0;32mI (500) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (507) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (513) heap_init: At 400968A8 len 00009758 (37 KiB): IRAM[0m
+[0;32mI (521) spi_flash: detected chip: generic[0m
+[0;32mI (524) spi_flash: flash io: dio[0m
+[0;33mW (528) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (542) main_task: Started on CPU0[0m
+[0;32mI (552) main_task: Calling app_main()[0m
+[0;32mI (582) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+I (602) wifi:wifi driver task: 3ffc063c, prio:23, stack:6656, core=0
+I (612) wifi:wifi firmware version: cc1dd81
+I (612) wifi:wifi certification version: v7.0
+I (612) wifi:config NVS flash: enabled
+I (622) wifi:config nano formating: disabled
+I (622) wifi:Init data frame dynamic rx buffer num: 32
+I (622) wifi:Init static rx mgmt buffer num: 5
+I (632) wifi:Init management short buffer num: 32
+I (632) wifi:Init dynamic tx buffer num: 32
+I (642) wifi:Init static rx buffer size: 1600
+I (642) wifi:Init static rx buffer num: 10
+I (642) wifi:Init dynamic rx buffer num: 32
+[0;32mI (652) wifi_init: rx ba win: 6[0m
+[0;32mI (652) wifi_init: tcpip mbox: 32[0m
+[0;32mI (662) wifi_init: udp mbox: 6[0m
+[0;32mI (662) wifi_init: tcp mbox: 6[0m
+[0;32mI (662) wifi_init: tcp tx win: 5760[0m
+[0;32mI (672) wifi_init: tcp rx win: 5760[0m
+[0;32mI (672) wifi_init: tcp mss: 1440[0m
+[0;32mI (682) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (682) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (692) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (782) wifi:mode : sta (00:4b:12:24:76:40)
+I (782) wifi:enable tsf
+I (802) wifi:new:<7,0>, old:<1,0>, ap:<255,255>, sta:<7,0>, prof:1
+I (802) wifi:state: init -> auth (b0)
+I (812) wifi:state: auth -> assoc (0)
+I (812) wifi:state: assoc -> run (10)
+W (822) wifi:[ADDBA]rx delba, code:39, delete tid:0
+W (822) wifi:[ADDBA]rx delba, code:39, delete tid:0
+W (822) wifi:[ADDBA]rx delba, code:39, delete tid:5
+I (832) wifi:<ba-add>idx:0 (ifx:0, c0:06:c3:97:1d:51), tid:5, ssn:23, winSize:64
+I (932) wifi:connected with FutureLab2103, aid = 1, channel 7, BW20, bssid = c0:06:c3:97:1d:51
+I (932) wifi:security: WPA2-PSK, phy: bgn, rssi: -58
+I (942) wifi:pm start, type: 1
+
+I (942) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1092) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (1952) esp_netif_handlers: sta ip: 192.168.31.107, mask: 255.255.255.0, gw: 192.168.31.1[0m
+[0;32mI (5782) mdns_mem: mDNS task will be created from internal RAM[0m
+[0;32mI (5782) Servo Control: Access via: http://esp32-door.local[0m
+[0;32mI (5792) main_task: Returned from app_main()[0m
+I (8712) wifi:<ba-add>idx:1 (ifx:0, c0:06:c3:97:1d:51), tid:0, ssn:64, winSize:64
+[0;32mI (9132) Servo Control: Received /setAngle request[0m
+[0;32mI (9132) Servo Control: Query: angle=108[0m
+[0;32mI (9132) Servo Control: Parsed angle: 108[0m
+[0;32mI (11352) Servo Control: Received /setAngle request[0m
+[0;32mI (11352) Servo Control: Query: angle=101[0m
+[0;32mI (11352) Servo Control: Parsed angle: 101[0m
+[0;32mI (11372) Servo Control: Received /setAngle request[0m
+[0;32mI (11372) Servo Control: Query: angle=103[0m
+[0;32mI (11372) Servo Control: Parsed angle: 103[0m
+[0;32mI (11392) Servo Control: Received /setAngle request[0m
+[0;32mI (11402) Servo Control: Query: angle=104[0m
+[0;32mI (11402) Servo Control: Parsed angle: 104[0m
+[0;32mI (11412) Servo Control: Received /setAngle request[0m
+[0;32mI (11412) Servo Control: Query: angle=105[0m
+[0;32mI (11412) Servo Control: Parsed angle: 105[0m
+[0;32mI (11432) Servo Control: Received /setAngle request[0m
+[0;32mI (11432) Servo Control: Query: angle=106[0m
+[0;32mI (11442) Servo Control: Parsed angle: 106[0m
+[0;32mI (11452) Servo Control: Received /setAngle request[0m
+[0;32mI (11452) Servo Control: Query: angle=108[0m
+[0;32mI (11452) Servo Control: Parsed angle: 108[0m
+[0;32mI (11472) Servo Control: Received /setAngle request[0m
+[0;32mI (11472) Servo Control: Query: angle=110[0m
+[0;32mI (11472) Servo Control: Parsed angle: 110[0m
+[0;33mW (11482) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;32mI (11492) Servo Control: Received /setAngle request[0m
+[0;32mI (11492) Servo Control: Query: angle=111[0m
+[0;32mI (11492) Servo Control: Parsed angle: 111[0m
+[0;32mI (11512) Servo Control: Received /setAngle request[0m
+[0;32mI (11512) Servo Control: Query: angle=112[0m
+[0;32mI (11512) Servo Control: Parsed angle: 112[0m
+[0;32mI (11532) Servo Control: Received /setAngle request[0m
+[0;32mI (11532) Servo Control: Query: angle=115[0m
+[0;32mI (11532) Servo Control: Parsed angle: 115[0m
+[0;32mI (11562) Servo Control: Received /setAngle request[0m
+[0;32mI (11562) Servo Control: Query: angle=116[0m
+[0;32mI (11562) Servo Control: Parsed angle: 116[0m
+[0;33mW (11572) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (11572) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;32mI (11582) Servo Control: Received /setAngle request[0m
+[0;32mI (11582) Servo Control: Query: angle=118[0m
+[0;32mI (11592) Servo Control: Parsed angle: 118[0m
+[0;32mI (11612) Servo Control: Received /setAngle request[0m
+[0;32mI (11612) Servo Control: Query: angle=119[0m
+[0;32mI (11612) Servo Control: Parsed angle: 119[0m
+[0;32mI (14022) Servo Control: Received /setAngle request[0m
+[0;32mI (14022) Servo Control: Query: angle=70[0m
+[0;32mI (14022) Servo Control: Parsed angle: 70[0m
+[0;32mI (14142) Servo Control: Received /setAngle request[0m
+[0;32mI (14142) Servo Control: Query: angle=69[0m
+[0;32mI (14142) Servo Control: Parsed angle: 69[0m
+[0;32mI (14182) Servo Control: Received /setAngle request[0m
+[0;32mI (14182) Servo Control: Query: angle=66[0m
+[0;32mI (14182) Servo Control: Parsed angle: 66[0m
+[0;32mI (14732) Servo Control: Received /setAngle request[0m
+[0;32mI (14732) Servo Control: Query: angle=54[0m
+[0;32mI (14732) Servo Control: Parsed angle: 54[0m
+[0;32mI (14752) Servo Control: Received /setAngle request[0m
+[0;32mI (14752) Servo Control: Query: angle=53[0m
+[0;32mI (14752) Servo Control: Parsed angle: 53[0m
+[0;32mI (14762) Servo Control: Received /setAngle request[0m
+[0;32mI (14762) Servo Control: Query: angle=52[0m
+[0;32mI (14762) Servo Control: Parsed angle: 52[0m
+[0;32mI (14782) Servo Control: Received /setAngle request[0m
+[0;32mI (14782) Servo Control: Query: angle=51[0m
+[0;32mI (14782) Servo Control: Parsed angle: 51[0m
+[0;32mI (14802) Servo Control: Received /setAngle request[0m
+[0;32mI (14802) Servo Control: Query: angle=50[0m
+[0;32mI (14802) Servo Control: Parsed angle: 50[0m
+[0;32mI (14832) Servo Control: Received /setAngle request[0m
+[0;32mI (14832) Servo Control: Query: angle=49[0m
+[0;32mI (14832) Servo Control: Parsed angle: 49[0m
+[0;32mI (14892) Servo Control: Received /setAngle request[0m
+[0;32mI (14892) Servo Control: Query: angle=45[0m
+[0;32mI (14892) Servo Control: Parsed angle: 45[0m
+[0;32mI (16472) Servo Control: Received /setAngle request[0m
+[0;32mI (16472) Servo Control: Query: angle=93[0m
+[0;32mI (16472) Servo Control: Parsed angle: 93[0m
+[0;32mI (16492) Servo Control: Received /setAngle request[0m
+[0;32mI (16492) Servo Control: Query: angle=96[0m
+[0;32mI (16492) Servo Control: Parsed angle: 96[0m
+[0;32mI (16502) Servo Control: Received /setAngle request[0m
+[0;32mI (16502) Servo Control: Query: angle=107[0m
+[0;32mI (16502) Servo Control: Parsed angle: 107[0m
+[0;32mI (16522) Servo Control: Received /setAngle request[0m
+[0;32mI (16522) Servo Control: Query: angle=109[0m
+[0;32mI (16522) Servo Control: Parsed angle: 109[0m
+[0;32mI (16542) Servo Control: Received /setAngle request[0m
+[0;32mI (16542) Servo Control: Query: angle=112[0m
+[0;32mI (16542) Servo Control: Parsed angle: 112[0m
+[0;33mW (16552) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;32mI (16572) Servo Control: Received /setAngle request[0m
+[0;32mI (16572) Servo Control: Query: angle=113[0m
+[0;32mI (16572) Servo Control: Parsed angle: 113[0m
+[0;32mI (16592) Servo Control: Received /setAngle request[0m
+[0;32mI (16592) Servo Control: Query: angle=115[0m
+[0;32mI (16592) Servo Control: Parsed angle: 115[0m
+[0;32mI (16612) Servo Control: Received /setAngle request[0m
+[0;32mI (16612) Servo Control: Query: angle=117[0m
+[0;32mI (16612) Servo Control: Parsed angle: 117[0m
+[0;32mI (16622) Servo Control: Received /setAngle request[0m
+[0;32mI (16622) Servo Control: Query: angle=118[0m
+[0;32mI (16622) Servo Control: Parsed angle: 118[0m
+[0;32mI (16652) Servo Control: Received /setAngle request[0m
+[0;32mI (16652) Servo Control: Query: angle=122[0m
+[0;32mI (16652) Servo Control: Parsed angle: 122[0m
+[0;32mI (16672) Servo Control: Received /setAngle request[0m
+[0;32mI (16672) Servo Control: Query: angle=124[0m
+[0;32mI (16682) Servo Control: Parsed angle: 124[0m
+[0;32mI (16692) Servo Control: Received /setAngle request[0m
+[0;32mI (16692) Servo Control: Query: angle=125[0m
+[0;32mI (16692) Servo Control: Parsed angle: 125[0m
+[0;33mW (16702) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;32mI (16712) Servo Control: Received /setAngle request[0m
+[0;32mI (16712) Servo Control: Query: angle=128[0m
+[0;32mI (16712) Servo Control: Parsed angle: 128[0m
+[0;33mW (16732) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;32mI (16732) Servo Control: Received /setAngle request[0m
+[0;32mI (16742) Servo Control: Query: angle=129[0m
+[0;32mI (16742) Servo Control: Parsed angle: 129[0m
+[0;32mI (16762) Servo Control: Received /setAngle request[0m
+[0;32mI (16762) Servo Control: Query: angle=132[0m
+[0;32mI (16762) Servo Control: Parsed angle: 132[0m
+[0;32mI (16782) Servo Control: Received /setAngle request[0m
+[0;32mI (16782) Servo Control: Query: angle=136[0m
+[0;32mI (16782) Servo Control: Parsed angle: 136[0m
+[0;32mI (16802) Servo Control: Received /setAngle request[0m
+[0;32mI (16802) Servo Control: Query: angle=138[0m
+[0;32mI (16802) Servo Control: Parsed angle: 138[0m
+[0;32mI (16842) Servo Control: Received /setAngle request[0m
+[0;32mI (16842) Servo Control: Query: angle=139[0m
+[0;32mI (16842) Servo Control: Parsed angle: 139[0m
+[0;32mI (16862) Servo Control: Received /setAngle request[0m
+[0;32mI (16862) Servo Control: Query: angle=142[0m
+[0;32mI (16862) Servo Control: Parsed angle: 142[0m
+[0;32mI (16882) Servo Control: Received /setAngle request[0m
+[0;32mI (16882) Servo Control: Query: angle=143[0m
+[0;32mI (16882) Servo Control: Parsed angle: 143[0m
+[0;32mI (16892) Servo Control: Received /setAngle request[0m
+[0;32mI (16892) Servo Control: Query: angle=144[0m
+[0;32mI (16892) Servo Control: Parsed angle: 144[0m
+[0;33mW (16902) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;32mI (16912) Servo Control: Received /setAngle request[0m
+[0;32mI (16922) Servo Control: Query: angle=145[0m
+[0;32mI (16922) Servo Control: Parsed angle: 145[0m
+[0;32mI (16942) Servo Control: Received /setAngle request[0m
+[0;32mI (16942) Servo Control: Query: angle=146[0m
+[0;32mI (16942) Servo Control: Parsed angle: 146[0m
+[0;33mW (16962) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;32mI (16992) Servo Control: Received /setAngle request[0m
+[0;32mI (16992) Servo Control: Query: angle=147[0m
+[0;32mI (16992) Servo Control: Parsed angle: 147[0m
+[0;32mI (17012) Servo Control: Received /setAngle request[0m
+[0;32mI (17012) Servo Control: Query: angle=148[0m
+[0;32mI (17012) Servo Control: Parsed angle: 148[0m
+[0;32mI (17062) Servo Control: Received /setAngle request[0m
+[0;32mI (17062) Servo Control: Query: angle=150[0m
+[0;32mI (17062) Servo Control: Parsed angle: 150[0m
+[0;32mI (17092) Servo Control: Received /setAngle request[0m
+[0;32mI (17092) Servo Control: Query: angle=151[0m
+[0;32mI (17092) Servo Control: Parsed angle: 151[0m
+[0;32mI (17112) Servo Control: Received /setAngle request[0m
+[0;32mI (17112) Servo Control: Query: angle=152[0m
+[0;32mI (17112) Servo Control: Parsed angle: 152[0m
+[0;32mI (17122) Servo Control: Received /setAngle request[0m
+[0;32mI (17122) Servo Control: Query: angle=153[0m
+[0;32mI (17122) Servo Control: Parsed angle: 153[0m
+[0;32mI (17192) Servo Control: Received /setAngle request[0m
+[0;32mI (17192) Servo Control: Query: angle=155[0m
+[0;32mI (17192) Servo Control: Parsed angle: 155[0m
+[0;32mI (17212) Servo Control: Received /setAngle request[0m
+[0;32mI (17212) Servo Control: Query: angle=157[0m
+[0;32mI (17212) Servo Control: Parsed angle: 157[0m
+[0;32mI (17512) Servo Control: Received /setAngle request[0m
+[0;32mI (17512) Servo Control: Query: angle=156[0m
+[0;32mI (17512) Servo Control: Parsed angle: 156[0m
+[0;33mW (17522) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;32mI (17542) Servo Control: Received /setAngle request[0m
+[0;32mI (17542) Servo Control: Query: angle=148[0m
+[0;32mI (17542) Servo Control: Parsed angle: 148[0m
+[0;32mI (17562) Servo Control: Received /setAngle request[0m
+[0;32mI (17562) Servo Control: Query: angle=144[0m
+[0;32mI (17562) Servo Control: Parsed angle: 144[0m
+[0;32mI (17582) Servo Control: Received /setAngle request[0m
+[0;32mI (17582) Servo Control: Query: angle=140[0m
+[0;32mI (17592) Servo Control: Parsed angle: 140[0m
+[0;32mI (17612) Servo Control: Received /setAngle request[0m
+[0;32mI (17612) Servo Control: Query: angle=133[0m
+[0;32mI (17612) Servo Control: Parsed angle: 133[0m
+[0;32mI (17622) Servo Control: Received /setAngle request[0m
+[0;32mI (17622) Servo Control: Query: angle=127[0m
+[0;32mI (17622) Servo Control: Parsed angle: 127[0m
+[0;32mI (17652) Servo Control: Received /setAngle request[0m
+[0;32mI (17652) Servo Control: Query: angle=124[0m
+[0;32mI (17652) Servo Control: Parsed angle: 124[0m
+[0;33mW (17662) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (17662) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;32mI (17672) Servo Control: Received /setAngle request[0m
+[0;32mI (17672) Servo Control: Query: angle=121[0m
+[0;32mI (17672) Servo Control: Parsed angle: 121[0m
+[0;32mI (17692) Servo Control: Received /setAngle request[0m
+[0;32mI (17692) Servo Control: Query: angle=119[0m
+[0;32mI (17692) Servo Control: Parsed angle: 119[0m
+[0;32mI (17712) Servo Control: Received /setAngle request[0m
+[0;32mI (17712) Servo Control: Query: angle=115[0m
+[0;32mI (17712) Servo Control: Parsed angle: 115[0m
+[0;32mI (17752) Servo Control: Received /setAngle request[0m
+[0;32mI (17752) Servo Control: Query: angle=113[0m
+[0;32mI (17752) Servo Control: Parsed angle: 113[0m
+[0;32mI (17782) Servo Control: Received /setAngle request[0m
+[0;32mI (17782) Servo Control: Query: angle=112[0m
+[0;32mI (17782) Servo Control: Parsed angle: 112[0m
+[0;32mI (17802) Servo Control: Received /setAngle request[0m
+[0;32mI (17802) Servo Control: Query: angle=111[0m
+[0;32mI (17802) Servo Control: Parsed angle: 111[0m
+[0;32mI (17822) Servo Control: Received /setAngle request[0m
+[0;32mI (17822) Servo Control: Query: angle=110[0m
+[0;32mI (17822) Servo Control: Parsed angle: 110[0m
+[0;32mI (17862) Servo Control: Received /setAngle request[0m
+[0;32mI (17862) Servo Control: Query: angle=109[0m
+[0;32mI (17862) Servo Control: Parsed angle: 109[0m
+[0;32mI (17882) Servo Control: Received /setAngle request[0m
+[0;32mI (17882) Servo Control: Query: angle=108[0m
+[0;32mI (17882) Servo Control: Parsed angle: 108[0m
+[0;32mI (17902) Servo Control: Received /setAngle request[0m
+[0;32mI (17912) Servo Control: Query: angle=106[0m
+[0;32mI (17912) Servo Control: Parsed angle: 106[0m
+[0;32mI (17922) Servo Control: Received /setAngle request[0m
+[0;32mI (17932) Servo Control: Query: angle=105[0m
+[0;32mI (17932) Servo Control: Parsed angle: 105[0m
+[0;32mI (17962) Servo Control: Received /setAngle request[0m
+[0;32mI (17962) Servo Control: Query: angle=103[0m
+[0;32mI (17962) Servo Control: Parsed angle: 103[0m
+[0;32mI (18002) Servo Control: Received /setAngle request[0m
+[0;32mI (18002) Servo Control: Query: angle=99[0m
+[0;32mI (18002) Servo Control: Parsed angle: 99[0m
+[0;32mI (18022) Servo Control: Received /setAngle request[0m
+[0;32mI (18032) Servo Control: Query: angle=96[0m
+[0;32mI (18032) Servo Control: Parsed angle: 96[0m
+[0;32mI (18042) Servo Control: Received /setAngle request[0m
+[0;32mI (18042) Servo Control: Query: angle=93[0m
+[0;32mI (18042) Servo Control: Parsed angle: 93[0m
+[0;32mI (18072) Servo Control: Received /setAngle request[0m
+[0;32mI (18072) Servo Control: Query: angle=92[0m
+[0;32mI (18072) Servo Control: Parsed angle: 92[0m
+[0;32mI (18082) Servo Control: Received /setAngle request[0m
+[0;32mI (18082) Servo Control: Query: angle=90[0m
+[0;32mI (18082) Servo Control: Parsed angle: 90[0m
+[0;32mI (18112) Servo Control: Received /setAngle request[0m
+[0;32mI (18112) Servo Control: Query: angle=86[0m
+[0;32mI (18112) Servo Control: Parsed angle: 86[0m
+[0;32mI (18162) Servo Control: Received /setAngle request[0m
+[0;32mI (18162) Servo Control: Query: angle=82[0m
+[0;32mI (18162) Servo Control: Parsed angle: 82[0m
+[0;32mI (18172) Servo Control: Received /setAngle request[0m
+[0;32mI (18172) Servo Control: Query: angle=80[0m
+[0;32mI (18172) Servo Control: Parsed angle: 80[0m
+[0;32mI (18202) Servo Control: Received /setAngle request[0m
+[0;32mI (18202) Servo Control: Query: angle=79[0m
+[0;32mI (18202) Servo Control: Parsed angle: 79[0m
+[0;32mI (18252) Servo Control: Received /setAngle request[0m
+[0;32mI (18252) Servo Control: Query: angle=77[0m
+[0;32mI (18252) Servo Control: Parsed angle: 77[0m
+[0;32mI (18352) Servo Control: Received /setAngle request[0m
+[0;32mI (18352) Servo Control: Query: angle=66[0m
+[0;32mI (18352) Servo Control: Parsed angle: 66[0m
+[0;33mW (18362) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (18362) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;32mI (18372) Servo Control: Received /setAngle request[0m
+[0;32mI (18372) Servo Control: Query: angle=63[0m
+[0;32mI (18372) Servo Control: Parsed angle: 63[0m
+[0;32mI (18382) Servo Control: Received /setAngle request[0m
+[0;32mI (18392) Servo Control: Query: angle=61[0m
+[0;32mI (18392) Servo Control: Parsed angle: 61[0m
+[0;32mI (18402) Servo Control: Received /setAngle request[0m
+[0;32mI (18402) Servo Control: Query: angle=60[0m
+[0;32mI (18402) Servo Control: Parsed angle: 60[0m
+[0;32mI (18422) Servo Control: Received /setAngle request[0m
+[0;32mI (18422) Servo Control: Query: angle=58[0m
+[0;32mI (18422) Servo Control: Parsed angle: 58[0m
+[0;32mI (18442) Servo Control: Received /setAngle request[0m
+[0;32mI (18442) Servo Control: Query: angle=56[0m
+[0;32mI (18442) Servo Control: Parsed angle: 56[0m
+[0;32mI (18462) Servo Control: Received /setAngle request[0m
+[0;32mI (18462) Servo Control: Query: angle=55[0m
+[0;32mI (18462) Servo Control: Parsed angle: 55[0m
+[0;32mI (18492) Servo Control: Received /setAngle request[0m
+[0;32mI (18492) Servo Control: Query: angle=53[0m
+[0;32mI (18492) Servo Control: Parsed angle: 53[0m
+[0;32mI (18502) Servo Control: Received /setAngle request[0m
+[0;32mI (18502) Servo Control: Query: angle=51[0m
+[0;32mI (18502) Servo Control: Parsed angle: 51[0m
+[0;32mI (18522) Servo Control: Received /setAngle request[0m
+[0;32mI (18522) Servo Control: Query: angle=50[0m
+[0;32mI (18522) Servo Control: Parsed angle: 50[0m
+[0;32mI (18542) Servo Control: Received /setAngle request[0m
+[0;32mI (18542) Servo Control: Query: angle=49[0m
+[0;32mI (18542) Servo Control: Parsed angle: 49[0m
+[0;32mI (20772) Servo Control: Received /setAngle request[0m
+[0;32mI (20772) Servo Control: Query: angle=97[0m
+[0;32mI (20772) Servo Control: Parsed angle: 97[0m
+[0;32mI (20772) Servo Control: Received /setAngle request[0m
+[0;32mI (20782) Servo Control: Query: angle=93[0m
+[0;32mI (20782) Servo Control: Parsed angle: 93[0m
+[0;32mI (20812) Servo Control: Received /setAngle request[0m
+[0;32mI (20812) Servo Control: Query: angle=107[0m
+[0;32mI (20812) Servo Control: Parsed angle: 107[0m
+[0;33mW (20822) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;32mI (20822) Servo Control: Received /setAngle request[0m
+[0;32mI (20822) Servo Control: Query: angle=109[0m
+[0;32mI (20832) Servo Control: Parsed angle: 109[0m
+[0;32mI (20842) Servo Control: Received /setAngle request[0m
+[0;32mI (20842) Servo Control: Query: angle=110[0m
+[0;32mI (20842) Servo Control: Parsed angle: 110[0m
+[0;32mI (20862) Servo Control: Received /setAngle request[0m
+[0;32mI (20872) Servo Control: Query: angle=112[0m
+[0;32mI (20872) Servo Control: Parsed angle: 112[0m
+[0;32mI (20902) Servo Control: Received /setAngle request[0m
+[0;32mI (20902) Servo Control: Query: angle=113[0m
+[0;32mI (20902) Servo Control: Parsed angle: 113[0m
+[0;32mI (20992) Servo Control: Received /setAngle request[0m
+[0;32mI (20992) Servo Control: Query: angle=125[0m
+[0;32mI (20992) Servo Control: Parsed angle: 125[0m
+[0;32mI (21002) Servo Control: Received /setAngle request[0m
+[0;32mI (21002) Servo Control: Query: angle=127[0m
+[0;32mI (21002) Servo Control: Parsed angle: 127[0m
+[0;32mI (21012) Servo Control: Received /setAngle request[0m
+[0;32mI (21012) Servo Control: Query: angle=129[0m
+[0;32mI (21022) Servo Control: Parsed angle: 129[0m
+[0;32mI (21032) Servo Control: Received /setAngle request[0m
+[0;32mI (21032) Servo Control: Query: angle=130[0m
+[0;32mI (21032) Servo Control: Parsed angle: 130[0m
+[0;32mI (21052) Servo Control: Received /setAngle request[0m
+[0;32mI (21052) Servo Control: Query: angle=131[0m
+[0;32mI (21052) Servo Control: Parsed angle: 131[0m
+[0;32mI (21132) Servo Control: Received /setAngle request[0m
+[0;32mI (21132) Servo Control: Query: angle=133[0m
+[0;32mI (21132) Servo Control: Parsed angle: 133[0m
+[0;32mI (23432) Servo Control: Received /setAngle request[0m
+[0;32mI (23432) Servo Control: Query: angle=143[0m
+[0;32mI (23432) Servo Control: Parsed angle: 143[0m
+[0;32mI (23992) Servo Control: Received /setAngle request[0m
+[0;32mI (23992) Servo Control: Query: angle=108[0m
+[0;32mI (23992) Servo Control: Parsed angle: 108[0m
+[0;32mI (24652) Servo Control: Received /setAngle request[0m
+[0;32mI (24652) Servo Control: Query: angle=135[0m
+[0;32mI (24652) Servo Control: Parsed angle: 135[0m
+[0;32mI (26242) Servo Control: Received /setAngle request[0m
+[0;32mI (26242) Servo Control: Query: angle=127[0m
+[0;32mI (26242) Servo Control: Parsed angle: 127[0m
+[0;32mI (28042) Servo Control: Received /setAngle request[0m
+[0;32mI (28042) Servo Control: Query: angle=162[0m
+[0;32mI (28042) Servo Control: Parsed angle: 162[0m
+[0;32mI (28052) Servo Control: Received /setAngle request[0m
+[0;32mI (28052) Servo Control: Query: angle=161[0m
+[0;32mI (28052) Servo Control: Parsed angle: 161[0m
+[0;32mI (41052) Servo Control: Received /setAngle request[0m
+[0;32mI (41062) Servo Control: Query: angle=54[0m
+[0;32mI (41062) Servo Control: Parsed angle: 54[0m
+[0;32mI (43812) Servo Control: Received /setAngle request[0m
+[0;32mI (43812) Servo Control: Query: angle=41[0m
+[0;32mI (43812) Servo Control: Parsed angle: 41[0m
+[0;32mI (173992) Servo Control: Received /setAngle request[0m
+[0;32mI (173992) Servo Control: Query: angle=117[0m
+[0;32mI (173992) Servo Control: Parsed angle: 117[0m
+[0;32mI (177892) Servo Control: Received /setAngle request[0m
+[0;32mI (177892) Servo Control: Query: angle=133[0m
+[0;32mI (177892) Servo Control: Parsed angle: 133[0m
+[0;32mI (178652) Servo Control: Received /setAngle request[0m
+[0;32mI (178652) Servo Control: Query: angle=145[0m
+[0;32mI (178652) Servo Control: Parsed angle: 145[0m
+[0;32mI (179132) Servo Control: Received /setAngle request[0m
+[0;32mI (179132) Servo Control: Query: angle=162[0m
+[0;32mI (179132) Servo Control: Parsed angle: 162[0m
+[0;32mI (191262) Servo Control: Received /setAngle request[0m
+[0;32mI (191262) Servo Control: Query: angle=168[0m
+[0;32mI (191262) Servo Control: Parsed angle: 168[0m
+[0;32mI (192202) Servo Control: Received /setAngle request[0m
+[0;32mI (192202) Servo Control: Query: angle=153[0m
+[0;32mI (192212) Servo Control: Parsed angle: 153[0m
+[0;32mI (193112) Servo Control: Received /setAngle request[0m
+[0;32mI (193112) Servo Control: Query: angle=129[0m
+[0;32mI (193112) Servo Control: Parsed angle: 129[0m
+[0;32mI (193122) Servo Control: Received /setAngle request[0m
+[0;32mI (193122) Servo Control: Query: angle=128[0m
+[0;32mI (193132) Servo Control: Parsed angle: 128[0m
+[0;33mW (193142) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;32mI (193152) Servo Control: Received /setAngle request[0m
+[0;32mI (193152) Servo Control: Query: angle=127[0m
+[0;32mI (193152) Servo Control: Parsed angle: 127[0m
+[0;32mI (193172) Servo Control: Received /setAngle request[0m
+[0;32mI (193172) Servo Control: Query: angle=126[0m
+[0;32mI (193172) Servo Control: Parsed angle: 126[0m
+[0;32mI (193182) Servo Control: Received /setAngle request[0m
+[0;32mI (193182) Servo Control: Query: angle=125[0m
+[0;32mI (193182) Servo Control: Parsed angle: 125[0m
+[0;32mI (193202) Servo Control: Received /setAngle request[0m
+[0;32mI (193202) Servo Control: Query: angle=124[0m
+[0;32mI (193202) Servo Control: Parsed angle: 124[0m
+[0;32mI (193222) Servo Control: Received /setAngle request[0m
+[0;32mI (193222) Servo Control: Query: angle=120[0m
+[0;32mI (193222) Servo Control: Parsed angle: 120[0m
+[0;33mW (193242) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;32mI (193242) Servo Control: Received /setAngle request[0m
+[0;32mI (193242) Servo Control: Query: angle=119[0m
+[0;32mI (193242) Servo Control: Parsed angle: 119[0m
+[0;32mI (193272) Servo Control: Received /setAngle request[0m
+[0;32mI (193272) Servo Control: Query: angle=118[0m
+[0;32mI (193272) Servo Control: Parsed angle: 118[0m
+[0;33mW (193282) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;32mI (193292) Servo Control: Received /setAngle request[0m
+[0;32mI (193292) Servo Control: Query: angle=117[0m
+[0;32mI (193292) Servo Control: Parsed angle: 117[0m
+[0;32mI (193312) Servo Control: Received /setAngle request[0m
+[0;32mI (193312) Servo Control: Query: angle=115[0m
+[0;32mI (193312) Servo Control: Parsed angle: 115[0m
+[0;32mI (193322) Servo Control: Received /setAngle request[0m
+[0;32mI (193322) Servo Control: Query: angle=113[0m
+[0;32mI (193322) Servo Control: Parsed angle: 113[0m
+[0;33mW (193332) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;32mI (193342) Servo Control: Received /setAngle request[0m
+[0;32mI (193342) Servo Control: Query: angle=112[0m
+[0;32mI (193352) Servo Control: Parsed angle: 112[0m
+[0;32mI (193372) Servo Control: Received /setAngle request[0m
+[0;32mI (193372) Servo Control: Query: angle=111[0m
+[0;32mI (193372) Servo Control: Parsed angle: 111[0m
+[0;33mW (193382) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (193382) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;32mI (193392) Servo Control: Received /setAngle request[0m
+[0;32mI (193392) Servo Control: Query: angle=108[0m
+[0;32mI (193402) Servo Control: Parsed angle: 108[0m
+[0;32mI (193412) Servo Control: Received /setAngle request[0m
+[0;32mI (193412) Servo Control: Query: angle=106[0m
+[0;32mI (193412) Servo Control: Parsed angle: 106[0m
+[0;32mI (193432) Servo Control: Received /setAngle request[0m
+[0;32mI (193432) Servo Control: Query: angle=103[0m
+[0;32mI (193432) Servo Control: Parsed angle: 103[0m
+[0;32mI (193472) Servo Control: Received /setAngle request[0m
+[0;32mI (193472) Servo Control: Query: angle=92[0m
+[0;32mI (193472) Servo Control: Parsed angle: 92[0m
+[0;33mW (193502) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;32mI (193512) Servo Control: Received /setAngle request[0m
+[0;32mI (193512) Servo Control: Query: angle=84[0m
+[0;32mI (193512) Servo Control: Parsed angle: 84[0m
+[0;33mW (193532) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;32mI (193532) Servo Control: Received /setAngle request[0m
+[0;32mI (193532) Servo Control: Query: angle=75[0m
+[0;32mI (193532) Servo Control: Parsed angle: 75[0m
+[0;32mI (193552) Servo Control: Received /setAngle request[0m
+[0;32mI (193552) Servo Control: Query: angle=71[0m
+[0;32mI (193552) Servo Control: Parsed angle: 71[0m
+[0;32mI (193602) Servo Control: Received /setAngle request[0m
+[0;32mI (193602) Servo Control: Query: angle=60[0m
+[0;32mI (193602) Servo Control: Parsed angle: 60[0m
+[0;32mI (193612) Servo Control: Received /setAngle request[0m
+[0;32mI (193612) Servo Control: Query: angle=57[0m
+[0;32mI (193612) Servo Control: Parsed angle: 57[0m
+[0;32mI (193662) Servo Control: Received /setAngle request[0m
+[0;32mI (193662) Servo Control: Query: angle=56[0m
+[0;32mI (193662) Servo Control: Parsed angle: 56[0m
+[0;32mI (193682) Servo Control: Received /setAngle request[0m
+[0;32mI (193682) Servo Control: Query: angle=51[0m
+[0;32mI (193682) Servo Control: Parsed angle: 51[0m
+[0;32mI (193722) Servo Control: Received /setAngle request[0m
+[0;32mI (193722) Servo Control: Query: angle=49[0m
+[0;32mI (193722) Servo Control: Parsed angle: 49[0m
+[0;32mI (193742) Servo Control: Received /setAngle request[0m
+[0;32mI (193742) Servo Control: Query: angle=48[0m
+[0;32mI (193742) Servo Control: Parsed angle: 48[0m
+[0;32mI (193762) Servo Control: Received /setAngle request[0m
+[0;32mI (193762) Servo Control: Query: angle=46[0m
+[0;32mI (193762) Servo Control: Parsed angle: 46[0m
+[0;32mI (193842) Servo Control: Received /setAngle request[0m
+[0;32mI (193842) Servo Control: Query: angle=37[0m
+[0;32mI (193842) Servo Control: Parsed angle: 37[0m
+[0;32mI (193872) Servo Control: Received /setAngle request[0m
+[0;32mI (193872) Servo Control: Query: angle=35[0m
+[0;32mI (193872) Servo Control: Parsed angle: 35[0m
+[0;32mI (193902) Servo Control: Received /setAngle request[0m
+[0;32mI (193902) Servo Control: Query: angle=33[0m
+[0;32mI (193902) Servo Control: Parsed angle: 33[0m
+[0;32mI (193912) Servo Control: Received /setAngle request[0m
+[0;32mI (193912) Servo Control: Query: angle=30[0m
+[0;32mI (193912) Servo Control: Parsed angle: 30[0m
+[0;33mW (193922) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (193932) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;32mI (193932) Servo Control: Received /setAngle request[0m
+[0;32mI (193942) Servo Control: Query: angle=29[0m
+[0;32mI (193942) Servo Control: Parsed angle: 29[0m
+[0;32mI (193972) Servo Control: Received /setAngle request[0m
+[0;32mI (193972) Servo Control: Query: angle=28[0m
+[0;32mI (193972) Servo Control: Parsed angle: 28[0m
+[0;32mI (193992) Servo Control: Received /setAngle request[0m
+[0;32mI (193992) Servo Control: Query: angle=27[0m
+[0;32mI (193992) Servo Control: Parsed angle: 27[0m
+[0;33mW (194002) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;32mI (194012) Servo Control: Received /setAngle request[0m
+[0;32mI (194012) Servo Control: Query: angle=25[0m
+[0;32mI (194012) Servo Control: Parsed angle: 25[0m
+[0;32mI (194062) Servo Control: Received /setAngle request[0m
+[0;32mI (194062) Servo Control: Query: angle=23[0m
+[0;32mI (194062) Servo Control: Parsed angle: 23[0m
+[0;32mI (197712) Servo Control: Received /setAngle request[0m
+[0;32mI (197722) Servo Control: Query: angle=89[0m
+[0;32mI (197722) Servo Control: Parsed angle: 89[0m
+[0;32mI (197732) Servo Control: Received /setAngle request[0m
+[0;32mI (197732) Servo Control: Query: angle=91[0m
+[0;32mI (197732) Servo Control: Parsed angle: 91[0m
+[0;33mW (197742) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;32mI (197752) Servo Control: Received /setAngle request[0m
+[0;32mI (197752) Servo Control: Query: angle=93[0m
+[0;32mI (197752) Servo Control: Parsed angle: 93[0m
+[0;32mI (197772) Servo Control: Received /setAngle request[0m
+[0;32mI (197772) Servo Control: Query: angle=94[0m
+[0;32mI (197772) Servo Control: Parsed angle: 94[0m
+[0;32mI (197812) Servo Control: Received /setAngle request[0m
+[0;32mI (197812) Servo Control: Query: angle=95[0m
+[0;32mI (197812) Servo Control: Parsed angle: 95[0m
+[0;32mI (197832) Servo Control: Received /setAngle request[0m
+[0;32mI (197832) Servo Control: Query: angle=96[0m
+[0;32mI (197832) Servo Control: Parsed angle: 96[0m
+[0;32mI (197852) Servo Control: Received /setAngle request[0m
+[0;32mI (197852) Servo Control: Query: angle=97[0m
+[0;32mI (197852) Servo Control: Parsed angle: 97[0m
+[0;32mI (197872) Servo Control: Received /setAngle request[0m
+[0;32mI (197872) Servo Control: Query: angle=98[0m
+[0;32mI (197872) Servo Control: Parsed angle: 98[0m
+[0;33mW (197882) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (197882) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;32mI (197892) Servo Control: Received /setAngle request[0m
+[0;32mI (197892) Servo Control: Query: angle=100[0m
+[0;32mI (197902) Servo Control: Parsed angle: 100[0m
+[0;32mI (197912) Servo Control: Received /setAngle request[0m
+[0;32mI (197912) Servo Control: Query: angle=101[0m
+[0;32mI (197912) Servo Control: Parsed angle: 101[0m
+[0;32mI (197932) Servo Control: Received /setAngle request[0m
+[0;32mI (197932) Servo Control: Query: angle=102[0m
+[0;32mI (197932) Servo Control: Parsed angle: 102[0m
+[0;32mI (197952) Servo Control: Received /setAngle request[0m
+[0;32mI (197952) Servo Control: Query: angle=103[0m
+[0;32mI (197952) Servo Control: Parsed angle: 103[0m
+[0;33mW (197962) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;32mI (197972) Servo Control: Received /setAngle request[0m
+[0;32mI (197972) Servo Control: Query: angle=106[0m
+[0;32mI (197972) Servo Control: Parsed angle: 106[0m
+[0;33mW (197992) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;32mI (197992) Servo Control: Received /setAngle request[0m
+[0;32mI (197992) Servo Control: Query: angle=107[0m
+[0;32mI (198002) Servo Control: Parsed angle: 107[0m
+[0;32mI (198012) Servo Control: Received /setAngle request[0m
+[0;32mI (198012) Servo Control: Query: angle=109[0m
+[0;32mI (198012) Servo Control: Parsed angle: 109[0m
+[0;33mW (198022) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (198032) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;32mI (198032) Servo Control: Received /setAngle request[0m
+[0;32mI (198032) Servo Control: Query: angle=110[0m
+[0;32mI (198042) Servo Control: Parsed angle: 110[0m
+[0;32mI (198052) Servo Control: Received /setAngle request[0m
+[0;32mI (198052) Servo Control: Query: angle=111[0m
+[0;32mI (198052) Servo Control: Parsed angle: 111[0m
+[0;33mW (198062) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;32mI (198072) Servo Control: Received /setAngle request[0m
+[0;32mI (198082) Servo Control: Query: angle=112[0m
+[0;32mI (198082) Servo Control: Parsed angle: 112[0m
+[0;33mW (198092) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;32mI (198092) Servo Control: Received /setAngle request[0m
+[0;32mI (198092) Servo Control: Query: angle=113[0m
+[0;32mI (198102) Servo Control: Parsed angle: 113[0m
+[0;33mW (198112) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;32mI (198122) Servo Control: Received /setAngle request[0m
+[0;32mI (198122) Servo Control: Query: angle=114[0m
+[0;32mI (198122) Servo Control: Parsed angle: 114[0m
+[0;32mI (198142) Servo Control: Received /setAngle request[0m
+[0;32mI (198142) Servo Control: Query: angle=115[0m
+[0;32mI (198142) Servo Control: Parsed angle: 115[0m
+[0;32mI (198232) Servo Control: Received /setAngle request[0m
+[0;32mI (198232) Servo Control: Query: angle=119[0m
+[0;32mI (198232) Servo Control: Parsed angle: 119[0m
+[0;32mI (198262) Servo Control: Received /setAngle request[0m
+[0;32mI (198262) Servo Control: Query: angle=120[0m
+[0;32mI (198262) Servo Control: Parsed angle: 120[0m
+[0;32mI (198282) Servo Control: Received /setAngle request[0m
+[0;32mI (198282) Servo Control: Query: angle=122[0m
+[0;32mI (198282) Servo Control: Parsed angle: 122[0m
+[0;32mI (198302) Servo Control: Received /setAngle request[0m
+[0;32mI (198302) Servo Control: Query: angle=123[0m
+[0;32mI (198302) Servo Control: Parsed angle: 123[0m
+[0;32mI (198332) Servo Control: Received /setAngle request[0m
+[0;32mI (198332) Servo Control: Query: angle=124[0m
+[0;32mI (198332) Servo Control: Parsed angle: 124[0m
+[0;32mI (198352) Servo Control: Received /setAngle request[0m
+[0;32mI (198352) Servo Control: Query: angle=125[0m
+[0;32mI (198352) Servo Control: Parsed angle: 125[0m
+[0;33mW (198372) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;32mI (198372) Servo Control: Received /setAngle request[0m
+[0;32mI (198372) Servo Control: Query: angle=127[0m
+[0;32mI (198372) Servo Control: Parsed angle: 127[0m
+[0;32mI (198402) Servo Control: Received /setAngle request[0m
+[0;32mI (198402) Servo Control: Query: angle=129[0m
+[0;32mI (198402) Servo Control: Parsed angle: 129[0m
+[0;32mI (198422) Servo Control: Received /setAngle request[0m
+[0;32mI (198422) Servo Control: Query: angle=130[0m
+[0;32mI (198422) Servo Control: Parsed angle: 130[0m
+[0;33mW (198432) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;32mI (198442) Servo Control: Received /setAngle request[0m
+[0;32mI (198442) Servo Control: Query: angle=131[0m
+[0;32mI (198442) Servo Control: Parsed angle: 131[0m
+[0;32mI (198462) Servo Control: Received /setAngle request[0m
+[0;32mI (198462) Servo Control: Query: angle=132[0m
+[0;32mI (198462) Servo Control: Parsed angle: 132[0m
+[0;32mI (198482) Servo Control: Received /setAngle request[0m
+[0;32mI (198482) Servo Control: Query: angle=134[0m
+[0;32mI (198482) Servo Control: Parsed angle: 134[0m
+[0;32mI (198492) Servo Control: Received /setAngle request[0m
+[0;32mI (198492) Servo Control: Query: angle=135[0m
+[0;32mI (198502) Servo Control: Parsed angle: 135[0m
+[0;32mI (198522) Servo Control: Received /setAngle request[0m
+[0;32mI (198522) Servo Control: Query: angle=136[0m
+[0;32mI (198522) Servo Control: Parsed angle: 136[0m
+[0;32mI (198532) Servo Control: Received /setAngle request[0m
+[0;32mI (198532) Servo Control: Query: angle=137[0m
+[0;32mI (198532) Servo Control: Parsed angle: 137[0m
+[0;32mI (198562) Servo Control: Received /setAngle request[0m
+[0;32mI (198562) Servo Control: Query: angle=138[0m
+[0;32mI (198562) Servo Control: Parsed angle: 138[0m
+[0;32mI (198592) Servo Control: Received /setAngle request[0m
+[0;32mI (198592) Servo Control: Query: angle=140[0m
+[0;32mI (198592) Servo Control: Parsed angle: 140[0m
+[0;33mW (198602) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;32mI (198612) Servo Control: Received /setAngle request[0m
+[0;32mI (198612) Servo Control: Query: angle=141[0m
+[0;32mI (198612) Servo Control: Parsed angle: 141[0m
+[0;32mI (198642) Servo Control: Received /setAngle request[0m
+[0;32mI (198642) Servo Control: Query: angle=142[0m
+[0;32mI (198642) Servo Control: Parsed angle: 142[0m
+[0;32mI (198662) Servo Control: Received /setAngle request[0m
+[0;32mI (198662) Servo Control: Query: angle=143[0m
+[0;32mI (198662) Servo Control: Parsed angle: 143[0m
+[0;33mW (198712) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;32mI (198712) Servo Control: Received /setAngle request[0m
+[0;32mI (198712) Servo Control: Query: angle=144[0m
+[0;32mI (198712) Servo Control: Parsed angle: 144[0m
+[0;32mI (198862) Servo Control: Received /setAngle request[0m
+[0;32mI (198862) Servo Control: Query: angle=148[0m
+[0;32mI (198862) Servo Control: Parsed angle: 148[0m
+[0;32mI (198912) Servo Control: Received /setAngle request[0m
+[0;32mI (198912) Servo Control: Query: angle=149[0m
+[0;32mI (198912) Servo Control: Parsed angle: 149[0m
+[0;32mI (198932) Servo Control: Received /setAngle request[0m
+[0;32mI (198932) Servo Control: Query: angle=150[0m
+[0;32mI (198932) Servo Control: Parsed angle: 150[0m
+[0;32mI (200112) Servo Control: Received /setAngle request[0m
+[0;32mI (200112) Servo Control: Query: angle=58[0m
+[0;32mI (200112) Servo Control: Parsed angle: 58[0m
+[0;32mI (200132) Servo Control: Received /setAngle request[0m
+[0;32mI (200132) Servo Control: Query: angle=57[0m
+[0;32mI (200132) Servo Control: Parsed angle: 57[0m
+[0;33mW (200142) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (200152) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;32mI (200172) Servo Control: Received /setAngle request[0m
+[0;32mI (200172) Servo Control: Query: angle=54[0m
+[0;32mI (200172) Servo Control: Parsed angle: 54[0m
+[0;32mI (200232) Servo Control: Received /setAngle request[0m
+[0;32mI (200232) Servo Control: Query: angle=51[0m
+[0;32mI (200232) Servo Control: Parsed angle: 51[0m
+[0;32mI (200262) Servo Control: Received /setAngle request[0m
+[0;32mI (200262) Servo Control: Query: angle=48[0m
+[0;32mI (200262) Servo Control: Parsed angle: 48[0m
+[0;32mI (200282) Servo Control: Received /setAngle request[0m
+[0;32mI (200282) Servo Control: Query: angle=45[0m
+[0;32mI (200282) Servo Control: Parsed angle: 45[0m
+[0;32mI (200302) Servo Control: Received /setAngle request[0m
+[0;32mI (200302) Servo Control: Query: angle=46[0m
+[0;32mI (200302) Servo Control: Parsed angle: 46[0m
+[0;32mI (200322) Servo Control: Received /setAngle request[0m
+[0;32mI (200322) Servo Control: Query: angle=42[0m
+[0;32mI (200322) Servo Control: Parsed angle: 42[0m
+[0;32mI (200342) Servo Control: Received /setAngle request[0m
+[0;32mI (200342) Servo Control: Query: angle=41[0m
+[0;32mI (200342) Servo Control: Parsed angle: 41[0m
+[0;32mI (200362) Servo Control: Received /setAngle request[0m
+[0;32mI (200362) Servo Control: Query: angle=40[0m
+[0;32mI (200362) Servo Control: Parsed angle: 40[0m
+[0;32mI (200382) Servo Control: Received /setAngle request[0m
+[0;32mI (200382) Servo Control: Query: angle=37[0m
+[0;32mI (200382) Servo Control: Parsed angle: 37[0m
+[0;32mI (200412) Servo Control: Received /setAngle request[0m
+[0;32mI (200412) Servo Control: Query: angle=35[0m
+[0;32mI (200412) Servo Control: Parsed angle: 35[0m
+[0;33mW (200422) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;32mI (200422) Servo Control: Received /setAngle request[0m
+[0;32mI (200422) Servo Control: Query: angle=34[0m
+[0;32mI (200432) Servo Control: Parsed angle: 34[0m
+[0;32mI (200452) Servo Control: Received /setAngle request[0m
+[0;32mI (200452) Servo Control: Query: angle=33[0m
+[0;32mI (200452) Servo Control: Parsed angle: 33[0m
+[0;33mW (200462) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (200462) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;32mI (200502) Servo Control: Received /setAngle request[0m
+[0;32mI (200502) Servo Control: Query: angle=30[0m
+[0;32mI (200502) Servo Control: Parsed angle: 30[0m
+[0;32mI (200522) Servo Control: Received /setAngle request[0m
+[0;32mI (200522) Servo Control: Query: angle=29[0m
+[0;32mI (200522) Servo Control: Parsed angle: 29[0m
+[0;32mI (200532) Servo Control: Received /setAngle request[0m
+[0;32mI (200542) Servo Control: Query: angle=27[0m
+[0;32mI (200542) Servo Control: Parsed angle: 27[0m
+[0;32mI (200602) Servo Control: Received /setAngle request[0m
+[0;32mI (200602) Servo Control: Query: angle=26[0m
+[0;32mI (200602) Servo Control: Parsed angle: 26[0m
+[0;32mI (200652) Servo Control: Received /setAngle request[0m
+[0;32mI (200652) Servo Control: Query: angle=23[0m
+[0;32mI (200652) Servo Control: Parsed angle: 23[0m
+[0;32mI (200692) Servo Control: Received /setAngle request[0m
+[0;32mI (200692) Servo Control: Query: angle=22[0m
+[0;32mI (200692) Servo Control: Parsed angle: 22[0m
+[0;32mI (200712) Servo Control: Received /setAngle request[0m
+[0;32mI (200712) Servo Control: Query: angle=21[0m
+[0;32mI (200712) Servo Control: Parsed angle: 21[0m
+[0;32mI (200732) Servo Control: Received /setAngle request[0m
+[0;32mI (200732) Servo Control: Query: angle=20[0m
+[0;32mI (200732) Servo Control: Parsed angle: 20[0m
+[0;32mI (200752) Servo Control: Received /setAngle request[0m
+[0;32mI (200752) Servo Control: Query: angle=19[0m
+[0;32mI (200752) Servo Control: Parsed angle: 19[0m
+[0;32mI (200802) Servo Control: Received /setAngle request[0m
+[0;32mI (200802) Servo Control: Query: angle=16[0m
+[0;32mI (200802) Servo Control: Parsed angle: 16[0m
+[0;32mI (202032) Servo Control: Received /setAngle request[0m
+[0;32mI (202032) Servo Control: Query: angle=104[0m
+[0;32mI (202032) Servo Control: Parsed angle: 104[0m
+[0;32mI (202052) Servo Control: Received /setAngle request[0m
+[0;32mI (202052) Servo Control: Query: angle=105[0m
+[0;32mI (202052) Servo Control: Parsed angle: 105[0m
+[0;32mI (202072) Servo Control: Received /setAngle request[0m
+[0;32mI (202072) Servo Control: Query: angle=106[0m
+[0;32mI (202072) Servo Control: Parsed angle: 106[0m
+[0;32mI (202102) Servo Control: Received /setAngle request[0m
+[0;32mI (202112) Servo Control: Query: angle=107[0m
+[0;32mI (202112) Servo Control: Parsed angle: 107[0m
+[0;32mI (202132) Servo Control: Received /setAngle request[0m
+[0;32mI (202132) Servo Control: Query: angle=108[0m
+[0;32mI (202132) Servo Control: Parsed angle: 108[0m
+[0;32mI (202152) Servo Control: Received /setAngle request[0m
+[0;32mI (202152) Servo Control: Query: angle=109[0m
+[0;32mI (202152) Servo Control: Parsed angle: 109[0m
+[0;32mI (202222) Servo Control: Received /setAngle request[0m
+[0;32mI (202222) Servo Control: Query: angle=110[0m
+[0;32mI (202222) Servo Control: Parsed angle: 110[0m
+[0;32mI (202272) Servo Control: Received /setAngle request[0m
+[0;32mI (202272) Servo Control: Query: angle=111[0m
+[0;32mI (202272) Servo Control: Parsed angle: 111[0m
+[0;32mI (202332) Servo Control: Received /setAngle request[0m
+[0;32mI (202332) Servo Control: Query: angle=112[0m
+[0;32mI (202332) Servo Control: Parsed angle: 112[0m
+[0;32mI (208772) Servo Control: Received /setAngle request[0m
+[0;32mI (208782) Servo Control: Query: angle=141[0m
+[0;32mI (208782) Servo Control: Parsed angle: 141[0m
+[0;32mI (208862) Servo Control: Received /setAngle request[0m
+[0;32mI (208862) Servo Control: Query: angle=142[0m
+[0;32mI (208862) Servo Control: Parsed angle: 142[0m
+[0;32mI (208972) Servo Control: Received /setAngle request[0m
+[0;32mI (208972) Servo Control: Query: angle=144[0m
+[0;32mI (208972) Servo Control: Parsed angle: 144[0m
+[0;32mI (210822) Servo Control: Received /setAngle request[0m
+[0;32mI (210822) Servo Control: Query: angle=29[0m
+[0;32mI (210822) Servo Control: Parsed angle: 29[0m
+[0;32mI (211852) Servo Control: Received /setAngle request[0m
+[0;32mI (211852) Servo Control: Query: angle=20[0m
+[0;32mI (211852) Servo Control: Parsed angle: 20[0m
+[0;32mI (213702) Servo Control: Received /setAngle request[0m
+[0;32mI (213702) Servo Control: Query: angle=149[0m
+[0;32mI (213702) Servo Control: Parsed angle: 149[0m
+[0;32mI (214632) Servo Control: Received /setAngle request[0m
+[0;32mI (214632) Servo Control: Query: angle=149[0m
+[0;32mI (214632) Servo Control: Parsed angle: 149[0m

@@ -1,0 +1,321 @@
+�j%�(34) boot: chip re�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15532
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.2-dirty 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jun 23 2025 12:13:59[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v3.1[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (42) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (94) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=259c4h (154052) map[0m
+[0;32mI (156) esp_image: segment 1: paddr=000359ec vaddr=3ffb0000 size=03c74h ( 15476) load[0m
+[0;32mI (162) esp_image: segment 2: paddr=00039668 vaddr=40080000 size=069b0h ( 27056) load[0m
+[0;32mI (172) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=938cch (604364) map[0m
+[0;32mI (380) esp_image: segment 4: paddr=000d38f4 vaddr=400869b0 size=0fef8h ( 65272) load[0m
+[0;32mI (417) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (417) boot: Disabling RNG early entropy source...[0m
+[0;32mI (428) cpu_start: Multicore app[0m
+[0;32mI (437) cpu_start: Pro cpu start user code[0m
+[0;32mI (437) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (437) cpu_start: Application information:[0m
+[0;32mI (440) cpu_start: Project name:     app-template[0m
+[0;32mI (446) cpu_start: App version:      1[0m
+[0;32mI (450) cpu_start: Compile time:     Jun 23 2025 14:28:23[0m
+[0;32mI (456) cpu_start: ELF file SHA256:  22b4a2b1f...[0m
+[0;32mI (462) cpu_start: ESP-IDF:          v5.2-dirty[0m
+[0;32mI (467) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (472) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (476) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (481) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (488) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (494) heap_init: At 3FFB86C8 len 00027938 (158 KiB): DRAM[0m
+[0;32mI (501) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (507) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (513) heap_init: At 400968A8 len 00009758 (37 KiB): IRAM[0m
+[0;32mI (521) spi_flash: detected chip: generic[0m
+[0;32mI (524) spi_flash: flash io: dio[0m
+[0;33mW (528) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (542) main_task: Started on CPU0[0m
+[0;32mI (552) main_task: Calling app_main()[0m
+[0;32mI (582) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+I (592) wifi:wifi driver task: 3ffc06c0, prio:23, stack:6656, core=0
+I (602) wifi:wifi firmware version: cc1dd81
+I (602) wifi:wifi certification version: v7.0
+I (612) wifi:config NVS flash: enabled
+I (612) wifi:config nano formating: disabled
+I (612) wifi:Init data frame dynamic rx buffer num: 32
+I (612) wifi:Init static rx mgmt buffer num: 5
+I (622) wifi:Init management short buffer num: 32
+I (622) wifi:Init dynamic tx buffer num: 32
+I (632) wifi:Init static rx buffer size: 1600
+I (632) wifi:Init static rx buffer num: 10
+I (632) wifi:Init dynamic rx buffer num: 32
+[0;32mI (642) wifi_init: rx ba win: 6[0m
+[0;32mI (642) wifi_init: tcpip mbox: 32[0m
+[0;32mI (652) wifi_init: udp mbox: 6[0m
+[0;32mI (652) wifi_init: tcp mbox: 6[0m
+[0;32mI (652) wifi_init: tcp tx win: 5760[0m
+[0;32mI (662) wifi_init: tcp rx win: 5760[0m
+[0;32mI (662) wifi_init: tcp mss: 1440[0m
+[0;32mI (672) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (672) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (682) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (772) wifi:mode : sta (00:4b:12:24:76:40)
+I (772) wifi:enable tsf
+I (792) wifi:new:<7,0>, old:<1,0>, ap:<255,255>, sta:<7,0>, prof:1
+I (792) wifi:state: init -> auth (b0)
+I (802) wifi:state: auth -> assoc (0)
+I (812) wifi:state: assoc -> run (10)
+W (822) wifi:[ADDBA]rx delba, code:39, delete tid:0
+W (822) wifi:[ADDBA]rx delba, code:39, delete tid:0
+W (822) wifi:[ADDBA]rx delba, code:39, delete tid:5
+I (822) wifi:<ba-add>idx:0 (ifx:0, c0:06:c3:97:1d:51), tid:5, ssn:16, winSize:64
+I (912) wifi:connected with FutureLab2103, aid = 11, channel 7, BW20, bssid = c0:06:c3:97:1d:51
+I (922) wifi:security: WPA2-PSK, phy: bgn, rssi: -56
+I (922) wifi:pm start, type: 1
+
+I (922) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1002) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (1932) esp_netif_handlers: sta ip: 192.168.31.107, mask: 255.255.255.0, gw: 192.168.31.1[0m
+I (2582) wifi:<ba-add>idx:1 (ifx:0, c0:06:c3:97:1d:51), tid:0, ssn:46, winSize:64
+[0;32mI (5782) mdns_mem: mDNS task will be created from internal RAM[0m
+[0;32mI (5782) Servo Control: Access via: http://esp32-door.local[0m
+[0;32mI (5792) main_task: Returned from app_main()[0m
+[0;32mI (7462) Servo Control: Opening door (180°)[0m
+[0;32mI (8902) Servo Control: Closing door (0°)[0m
+[0;33mW (145152) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (145152) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (147652) Servo Control: Opening door (180°)[0m
+[0;32mI (151492) Servo Control: Closing door (0°)[0m
+[0;33mW (152432) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (152432) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (153192) Servo Control: Opening door (180°)[0m
+[0;33mW (153462) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (153462) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (155142) Servo Control: Closing door (0°)[0m
+[0;33mW (155292) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (155292) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (157342) Servo Control: Opening door (180°)[0m
+[0;33mW (157802) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (157802) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (159232) Servo Control: Closing door (0°)[0m
+[0;33mW (159352) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (159352) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (162912) Servo Control: Opening door (180°)[0m
+[0;33mW (163232) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (163232) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (164762) Servo Control: Closing door (0°)[0m
+[0;33mW (164902) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (164902) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (166822) Servo Control: Opening door (180°)[0m
+[0;33mW (167392) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (167392) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (168392) Servo Control: Closing door (0°)[0m
+[0;33mW (168552) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (168552) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (169672) Servo Control: Opening door (180°)[0m
+[0;33mW (169842) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (169842) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (172532) Servo Control: Closing door (0°)[0m
+[0;33mW (172982) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (172982) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (173662) Servo Control: Opening door (180°)[0m
+[0;33mW (173802) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (173802) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (174702) Servo Control: Closing door (0°)[0m
+[0;33mW (175152) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (175162) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (175892) Servo Control: Opening door (180°)[0m
+[0;33mW (176252) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (176262) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+	���� chip revision: v3.1[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (42) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (94) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=259c4h (154052) map[0m
+[0;32mI (156) esp_image: segment 1: paddr=000359ec vaddr=3ffb0000 size=03c74h ( 15476) load[0m
+[0;32mI (162) esp_image: segment 2: paddr=00039668 vaddr=40080000 size=069b0h ( 27056) load[0m
+[0;32mI (172) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=938cch (604364) map[0m
+[0;32mI (380) esp_image: segment 4: paddr=000d38f4 vaddr=400869b0 size=0fef8h ( 65272) load[0m
+[0;32mI (417) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (417) boot: Disabling RNG early entropy source...[0m
+[0;32mI (428) cpu_start: Multicore app[0m
+[0;32mI (437) cpu_start: Pro cpu start user code[0m
+[0;32mI (437) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (437) cpu_start: Application information:[0m
+[0;32mI (440) cpu_start: Project name:     app-template[0m
+[0;32mI (446) cpu_start: App version:      1[0m
+[0;32mI (450) cpu_start: Compile time:     Jun 23 2025 14:28:23[0m
+[0;32mI (456) cpu_start: ELF file SHA256:  22b4a2b1f...[0m
+[0;32mI (462) cpu_start: ESP-IDF:          v5.2-dirty[0m
+[0;32mI (467) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (471) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (476) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (481) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (488) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (494) heap_init: At 3FFB86C8 len 00027938 (158 KiB): DRAM[0m
+[0;32mI (501) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (507) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (513) heap_init: At 400968A8 len 00009758 (37 KiB): IRAM[0m
+[0;32mI (521) spi_flash: detected chip: generic[0m
+[0;32mI (524) spi_flash: flash io: dio[0m
+[0;33mW (528) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (542) main_task: Started on CPU0[0m
+[0;32mI (552) main_task: Calling app_main()[0m
+[0;32mI (582) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+I (592) wifi:wifi driver task: 3ffc06c0, prio:23, stack:6656, core=0
+I (602) wifi:wifi firmware version: cc1dd81
+I (602) wifi:wifi certification version: v7.0
+I (612) wifi:config NVS flash: enabled
+I (612) wifi:config nano formating: disabled
+I (612) wifi:Init data frame dynamic rx buffer num: 32
+I (612) wifi:Init static rx mgmt buffer num: 5
+I (622) wifi:Init management short buffer num: 32
+I (622) wifi:Init dynamic tx buffer num: 32
+I (632) wifi:Init static rx buffer size: 1600
+I (632) wifi:Init static rx buffer num: 10
+I (632) wifi:Init dynamic rx buffer num: 32
+[0;32mI (642) wifi_init: rx ba win: 6[0m
+[0;32mI (642) wifi_init: tcpip mbox: 32[0m
+[0;32mI (652) wifi_init: udp mbox: 6[0m
+[0;32mI (652) wifi_init: tcp mbox: 6[0m
+[0;32mI (652) wifi_init: tcp tx win: 5760[0m
+[0;32mI (662) wifi_init: tcp rx win: 5760[0m
+[0;32mI (662) wifi_init: tcp mss: 1440[0m
+[0;32mI (672) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (672) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (682) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (772) wifi:mode : sta (00:4b:12:24:76:40)
+I (772) wifi:enable tsf
+I (822) wifi:new:<7,0>, old:<1,0>, ap:<255,255>, sta:<7,0>, prof:1
+I (822) wifi:state: init -> auth (b0)
+I (832) wifi:state: auth -> assoc (0)
+I (832) wifi:state: assoc -> run (10)
+W (842) wifi:[ADDBA]rx delba, code:39, delete tid:0
+W (842) wifi:[ADDBA]rx delba, code:39, delete tid:0
+W (842) wifi:[ADDBA]rx delba, code:39, delete tid:5
+I (842) wifi:<ba-add>idx:0 (ifx:0, c0:06:c3:97:1d:51), tid:5, ssn:25, winSize:64
+I (982) wifi:connected with FutureLab2103, aid = 11, channel 7, BW20, bssid = c0:06:c3:97:1d:51
+I (982) wifi:security: WPA2-PSK, phy: bgn, rssi: -62
+I (992) wifi:pm start, type: 1
+
+I (992) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1022) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (1992) esp_netif_handlers: sta ip: 192.168.31.107, mask: 255.255.255.0, gw: 192.168.31.1[0m
+[0;32mI (5782) mdns_mem: mDNS task will be created from internal RAM[0m
+[0;32mI (5782) Servo Control: Access via: http://esp32-door.local[0m
+[0;32mI (5792) main_task: Returned from app_main()[0m
+I (5832) wifi:<ba-add>idx:1 (ifx:0, c0:06:c3:97:1d:51), tid:0, ssn:353, winSize:64
+[0;32mI (9812) Servo Control: Opening door (180°)[0m
+[0;33mW (10052) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (10052) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (11682) Servo Control: Closing door (0°)[0m
+[0;33mW (11992) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (11992) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (13342) Servo Control: Opening door (180°)[0m
+[0;32mI (13462) Servo Control: Closing door (0°)[0m
+[0;33mW (13672) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (13672) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (14462) Servo Control: Closing door (0°)[0m
+[0;33mW (14582) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (14582) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (15062) Servo Control: Closing door (0°)[0m
+[0;33mW (15272) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (15272) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (15672) Servo Control: Closing door (0°)[0m
+[0;33mW (15892) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (15892) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (16622) Servo Control: Closing door (0°)[0m
+[0;32mI (16642) Servo Control: Closing door (0°)[0m
+[0;32mI (17262) Servo Control: Opening door (180°)[0m
+[0;33mW (17742) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (17742) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (18412) Servo Control: Closing door (0°)[0m
+[0;33mW (18572) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (18572) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (19572) Servo Control: Closing door (0°)[0m
+[0;32mI (20062) Servo Control: Closing door (0°)[0m
+[0;32mI (20202) Servo Control: Closing door (0°)[0m
+[0;32mI (20622) Servo Control: Closing door (0°)[0m
+[0;32mI (20802) Servo Control: Closing door (0°)[0m
+[0;32mI (21762) Servo Control: Closing door (0°)[0m
+[0;32mI (21832) Servo Control: Closing door (0°)[0m
+[0;33mW (21992) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (21992) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (23872) Servo Control: Closing door (0°)[0m
+[0;33mW (24082) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (24082) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (25232) Servo Control: Opening door (180°)[0m
+[0;33mW (25822) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (25822) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (28182) Servo Control: Closing door (0°)[0m
+[0;33mW (28322) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (28322) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (29302) Servo Control: Opening door (180°)[0m
+[0;33mW (29582) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (29582) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (44142) Servo Control: Opening door (180°)[0m
+[0;33mW (44382) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (44382) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (44732) Servo Control: Closing door (0°)[0m
+[0;33mW (44922) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (44922) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (46532) Servo Control: Opening door (180°)[0m
+[0;32mI (47762) Servo Control: Closing door (0°)[0m
+[0;32mI (48562) Servo Control: Opening door (180°)[0m
+[0;32mI (48692) Servo Control: Closing door (0°)[0m
+[0;32mI (50622) Servo Control: Opening door (180°)[0m
+[0;32mI (50672) Servo Control: Closing door (0°)[0m
+[0;32mI (51232) Servo Control: Closing door (0°)[0m
+[0;33mW (51652) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (51652) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (54782) Servo Control: Closing door (0°)[0m
+[0;32mI (55022) Servo Control: Opening door (180°)[0m
+[0;33mW (55262) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (55272) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (56432) Servo Control: Closing door (0°)[0m
+[0;32mI (56622) Servo Control: Opening door (180°)[0m
+[0;33mW (57292) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (57302) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (57442) Servo Control: Closing door (0°)[0m
+[0;32mI (57812) Servo Control: Opening door (180°)[0m
+[0;32mI (58192) Servo Control: Closing door (0°)[0m
+[0;32mI (58662) Servo Control: Opening door (180°)[0m
+[0;33mW (58902) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (58902) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (62422) Servo Control: Opening door (180°)[0m
+[0;33mW (62642) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (62642) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (64222) Servo Control: Opening door (180°)[0m
+[0;32mI (65722) Servo Control: Closing door (0°)[0m
+[0;32mI (66162) Servo Control: Opening door (180°)[0m
+[0;32mI (66282) Servo Control: Closing door (0°)[0m
+[0;33mW (66412) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (66412) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (67802) Servo Control: Opening door (180°)[0m
+[0;32mI (68442) Servo Control: Opening door (180°)[0m
+[0;33mW (68702) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (68702) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m

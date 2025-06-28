@@ -1,0 +1,593 @@
++
+B��J���� chip ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15532
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.2-dirty 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jun 23 2025 12:13:59[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v3.1[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (42) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (94) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=25b84h (154500) map[0m
+[0;32mI (156) esp_image: segment 1: paddr=00035bac vaddr=3ffb0000 size=03c74h ( 15476) load[0m
+[0;32mI (162) esp_image: segment 2: paddr=00039828 vaddr=40080000 size=067f0h ( 26608) load[0m
+[0;32mI (172) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=93a64h (604772) map[0m
+[0;32mI (380) esp_image: segment 4: paddr=000d3a8c vaddr=400867f0 size=100b8h ( 65720) load[0m
+[0;32mI (417) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (417) boot: Disabling RNG early entropy source...[0m
+[0;32mI (429) cpu_start: Multicore app[0m
+[0;32mI (438) cpu_start: Pro cpu start user code[0m
+[0;32mI (438) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (438) cpu_start: Application information:[0m
+[0;32mI (441) cpu_start: Project name:     app-template[0m
+[0;32mI (446) cpu_start: App version:      1[0m
+[0;32mI (450) cpu_start: Compile time:     Jun 23 2025 14:28:23[0m
+[0;32mI (457) cpu_start: ELF file SHA256:  3450d99e2...[0m
+[0;32mI (462) cpu_start: ESP-IDF:          v5.2-dirty[0m
+[0;32mI (467) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (472) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (477) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (482) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (489) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (495) heap_init: At 3FFB86D0 len 00027930 (158 KiB): DRAM[0m
+[0;32mI (501) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (507) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (514) heap_init: At 400968A8 len 00009758 (37 KiB): IRAM[0m
+[0;32mI (521) spi_flash: detected chip: generic[0m
+[0;32mI (525) spi_flash: flash io: dio[0m
+[0;33mW (528) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (543) main_task: Started on CPU0[0m
+[0;32mI (553) main_task: Calling app_main()[0m
+[0;32mI (583) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+I (593) wifi:wifi driver task: 3ffc06c8, prio:23, stack:6656, core=0
+I (603) wifi:wifi firmware version: cc1dd81
+I (603) wifi:wifi certification version: v7.0
+I (613) wifi:config NVS flash: enabled
+I (613) wifi:config nano formating: disabled
+I (613) wifi:Init data frame dynamic rx buffer num: 32
+I (613) wifi:Init static rx mgmt buffer num: 5
+I (623) wifi:Init management short buffer num: 32
+I (623) wifi:Init dynamic tx buffer num: 32
+I (633) wifi:Init static rx buffer size: 1600
+I (633) wifi:Init static rx buffer num: 10
+I (633) wifi:Init dynamic rx buffer num: 32
+[0;32mI (643) wifi_init: rx ba win: 6[0m
+[0;32mI (643) wifi_init: tcpip mbox: 32[0m
+[0;32mI (653) wifi_init: udp mbox: 6[0m
+[0;32mI (653) wifi_init: tcp mbox: 6[0m
+[0;32mI (653) wifi_init: tcp tx win: 5760[0m
+[0;32mI (663) wifi_init: tcp rx win: 5760[0m
+[0;32mI (663) wifi_init: tcp mss: 1440[0m
+[0;32mI (673) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (673) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (683) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (773) wifi:mode : sta (00:4b:12:24:76:40)
+I (773) wifi:enable tsf
+I (823) wifi:new:<7,0>, old:<1,0>, ap:<255,255>, sta:<7,0>, prof:1
+I (823) wifi:state: init -> auth (b0)
+I (833) wifi:state: auth -> assoc (0)
+I (843) wifi:state: assoc -> run (10)
+I (863) wifi:<ba-add>idx:0 (ifx:0, c0:06:c3:97:1d:51), tid:5, ssn:228, winSize:64
+I (993) wifi:connected with FutureLab2103, aid = 11, channel 7, BW20, bssid = c0:06:c3:97:1d:51
+I (993) wifi:security: WPA2-PSK, phy: bgn, rssi: -72
+I (1003) wifi:pm start, type: 1
+
+I (1003) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1023) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (2013) esp_netif_handlers: sta ip: 192.168.31.107, mask: 255.255.255.0, gw: 192.168.31.1[0m
+I (2103) wifi:<ba-add>idx:1 (ifx:0, c0:06:c3:97:1d:51), tid:0, ssn:3787, winSize:64
+[0;32mI (5783) mdns_mem: mDNS task will be created from internal RAM[0m
+[0;32mI (5783) Servo Control: Access via: http://esp32-door.local[0m
+[0;32mI (5793) main_task: Returned from app_main()[0m
+[0;32mI (7193) Servo Control: Status: Closed[0m
+[0;32mI (7203) Servo Control: Status: Closed[0m
+[0;32mI (7203) Servo Control: Status: Closed[0m
+[0;32mI (7213) Servo Control: Status: Closed[0m
+[0;32mI (7283) Servo Control: Status: Closed[0m
+[0;32mI (7283) Servo Control: Status: Closed[0m
+[0;32mI (7293) Servo Control: Status: Closed[0m
+[0;32mI (7293) Servo Control: Status: Closed[0m
+[0;32mI (7483) Servo Control: Status: Closed[0m
+[0;32mI (7493) Servo Control: Status: Closed[0m
+[0;32mI (7503) Servo Control: Status: Closed[0m
+[0;32mI (7513) Servo Control: Status: Closed[0m
+[0;32mI (7563) Servo Control: Status: Closed[0m
+[0;32mI (7573) Servo Control: Status: Closed[0m
+[0;32mI (7653) Servo Control: Status: Closed[0m
+[0;32mI (7663) Servo Control: Closing door (0°)[0m
+[0;32mI (7673) Servo Control: Status: Closed[0m
+[0;32mI (7763) Servo Control: Status: Closed[0m
+[0;32mI (7843) Servo Control: Status: Closed[0m
+[0;32mI (7853) Servo Control: Status: Closed[0m
+[0;32mI (7873) Servo Control: Status: Closed[0m
+[0;32mI (9453) Servo Control: Status: Open[0m
+[0;32mI (10063) Servo Control: Status: Open[0m
+[0;32mI (10443) Servo Control: Status: Open[0m
+[0;32mI (11383) Servo Control: Status: Open[0m
+[0;32mI (11683) Servo Control: Closing door (0°)[0m
+[0;32mI (12083) Servo Control: Status: Closed[0m
+[0;32mI (13353) Servo Control: Status: Closed[0m
+[0;32mI (13793) Servo Control: Status: Closed[0m
+[0;32mI (14163) Servo Control: Status: Closed[0m
+[0;32mI (16193) Servo Control: Status: Closed[0m
+[0;32mI (16193) Servo Control: Status: Closed[0m
+[0;32mI (16433) Servo Control: Status: Closed[0m
+[0;32mI (17423) Servo Control: Status: Closed[0m
+[0;32mI (18453) Servo Control: Status: Closed[0m
+[0;32mI (19373) Servo Control: Status: Closed[0m
+[0;32mI (20493) Servo Control: Status: Closed[0m
+[0;32mI (21413) Servo Control: Status: Closed[0m
+[0;32mI (21513) Servo Control: Status: Closed[0m
+[0;32mI (22553) Servo Control: Status: Closed[0m
+[0;32mI (23573) Servo Control: Status: Closed[0m
+[0;32mI (25003) Servo Control: Status: Closed[0m
+[0;32mI (25403) Servo Control: Status: Closed[0m
+[0;32mI (26713) Servo Control: Status: Closed[0m
+[0;32mI (27373) Servo Control: Status: Closed[0m
+[0;32mI (28813) Servo Control: Status: Closed[0m
+[0;32mI (29403) Servo Control: Status: Closed[0m
+[0;32mI (30873) Servo Control: Status: Closed[0m
+[0;32mI (31393) Servo Control: Status: Closed[0m
+[0;32mI (32683) Servo Control: Status: Closed[0m
+[0;32mI (33393) Servo Control: Status: Closed[0m
+[0;32mI (34893) Servo Control: Status: Closed[0m
+[0;32mI (35473) Servo Control: Status: Closed[0m
+[0;32mI (36673) Servo Control: Status: Closed[0m
+[0;32mI (37593) Servo Control: Status: Closed[0m
+[0;32mI (38873) Servo Control: Status: Closed[0m
+[0;32mI (39633) Servo Control: Status: Closed[0m
+[0;32mI (40273) Servo Control: Status: Closed[0m
+[0;32mI (40763) Servo Control: Status: Closed[0m
+[0;32mI (40783) Servo Control: Status: Closed[0m
+[0;32mI (41703) Servo Control: Status: Closed[0m
+[0;32mI (42223) Servo Control: Status: Closed[0m
+[0;32mI (42713) Servo Control: Status: Closed[0m
+[0;32mI (43653) Servo Control: Status: Open[0m
+[0;32mI (43783) Servo Control: Status: Open[0m
+[0;32mI (44763) Servo Control: Status: Open[0m
+[0;32mI (45693) Servo Control: Status: Open[0m
+[0;32mI (45813) Servo Control: Status: Open[0m
+[0;32mI (46103) Servo Control: Status: Open[0m
+[0;32mI (46603) Servo Control: Closing door (0°)[0m
+[0;32mI (46643) Servo Control: Status: Closed[0m
+[0;32mI (47433) Servo Control: Status: Closed[0m
+[0;32mI (48143) Servo Control: Status: Closed[0m
+[0;32mI (48653) Servo Control: Status: Closed[0m
+[0;32mI (49363) Servo Control: Status: Closed[0m
+[0;32mI (51723) Servo Control: Status: Closed[0m
+[0;32mI (51733) Servo Control: Status: Closed[0m
+[0;32mI (51743) Servo Control: Status: Closed[0m
+[0;32mI (51923) Servo Control: Status: Closed[0m
+[0;32mI (52243) Servo Control: Status: Closed[0m
+[0;32mI (52753) Servo Control: Status: Closed[0m
+[0;32mI (53963) Servo Control: Status: Closed[0m
+[0;32mI (54323) Servo Control: Status: Closed[0m
+[0;32mI (54723) Servo Control: Status: Closed[0m
+[0;32mI (55923) Servo Control: Status: Closed[0m
+[0;32mI (56433) Servo Control: Status: Closed[0m
+[0;32mI (56743) Servo Control: Status: Closed[0m
+[0;32mI (57903) Servo Control: Status: Closed[0m
+[0;32mI (58493) Servo Control: Status: Closed[0m
+[0;32mI (58653) Servo Control: Status: Closed[0m
+[0;32mI (60033) Servo Control: Status: Closed[0m
+[0;32mI (60423) Servo Control: Status: Closed[0m
+[0;32mI (60733) Servo Control: Status: Closed[0m
+[0;32mI (61913) Servo Control: Status: Closed[0m
+[0;32mI (62803) Servo Control: Status: Closed[0m
+[0;32mI (62803) Servo Control: Status: Closed[0m
+[0;32mI (63903) Servo Control: Status: Closed[0m
+[0;32mI (64523) Servo Control: Status: Closed[0m
+[0;32mI (64733) Servo Control: Status: Closed[0m
+[0;32mI (65903) Servo Control: Status: Closed[0m
+[0;32mI (66623) Servo Control: Status: Closed[0m
+[0;32mI (66693) Servo Control: Status: Closed[0m
+[0;32mI (67903) Servo Control: Status: Closed[0m
+[0;32mI (68523) Servo Control: Status: Closed[0m
+[0;32mI (68733) Servo Control: Status: Closed[0m
+[0;32mI (69903) Servo Control: Status: Closed[0m
+[0;32mI (70583) Servo Control: Status: Closed[0m
+[0;32mI (70633) Servo Control: Status: Closed[0m
+[0;32mI (72013) Servo Control: Status: Closed[0m
+[0;32mI (72573) Servo Control: Status: Closed[0m
+[0;32mI (72623) Servo Control: Status: Closed[0m
+[0;32mI (74703) Servo Control: Status: Closed[0m
+[0;32mI (75633) Servo Control: Status: Closed[0m
+[0;32mI (76533) Servo Control: Status: Closed[0m
+[0;32mI (76943) Servo Control: Status: Closed[0m
+[0;32mI (78663) Servo Control: Status: Closed[0m
+[0;32mI (80483) Servo Control: Status: Closed[0m
+[0;32mI (81443) Servo Control: Status: Closed[0m
+[0;32mI (81453) Servo Control: Status: Closed[0m
+[0;32mI (81653) Servo Control: Status: Closed[0m
+[0;32mI (81673) Servo Control: Status: Closed[0m
+[0;32mI (82043) Servo Control: Status: Closed[0m
+[0;32mI (82193) Servo Control: Status: Closed[0m
+[0;32mI (82653) Servo Control: Status: Closed[0m
+[0;32mI (82663) Servo Control: Status: Closed[0m
+[0;32mI (82663) Servo Control: Status: Closed[0m
+[0;32mI (84703) Servo Control: Status: Closed[0m
+[0;32mI (84703) Servo Control: Status: Closed[0m
+[0;32mI (84713) Servo Control: Status: Closed[0m
+[0;32mI (86853) Servo Control: Status: Closed[0m
+[0;32mI (86853) Servo Control: Status: Closed[0m
+[0;32mI (86863) Servo Control: Status: Closed[0m
+[0;32mI (88803) Servo Control: Status: Closed[0m
+[0;32mI (88813) Servo Control: Status: Closed[0m
+[0;32mI (88823) Servo Control: Status: Closed[0m
+[0;32mI (90763) Servo Control: Status: Closed[0m
+[0;32mI (90763) Servo Control: Status: Closed[0m
+[0;32mI (90773) Servo Control: Status: Closed[0m
+[0;32mI (92173) Servo Control: Status: Closed[0m
+[0;32mI (92713) Servo Control: Status: Closed[0m
+[0;32mI (92723) Servo Control: Status: Closed[0m
+[0;32mI (93963) Servo Control: Status: Closed[0m
+[0;32mI (95473) Servo Control: Status: Closed[0m
+[0;32mI (96903) Servo Control: Status: Closed[0m
+[0;32mI (99083) Servo Control: Status: Closed[0m
+[0;32mI (100783) Servo Control: Status: Closed[0m
+[0;32mI (102933) Servo Control: Status: Closed[0m
+[0;32mI (104763) Servo Control: Status: Closed[0m
+[0;32mI (106113) Servo Control: Status: Closed[0m
+[0;32mI (106523) Servo Control: Status: Closed[0m
+[0;32mI (106603) Servo Control: Status: Closed[0m
+[0;32mI (106673) Servo Control: Status: Closed[0m
+[0;32mI (106743) Servo Control: Status: Closed[0m
+[0;32mI (106803) Servo Control: Status: Closed[0m
+[0;32mI (106833) Servo Control: Status: Closed[0m
+[0;32mI (107943) Servo Control: Status: Closed[0m
+[0;32mI (108873) Servo Control: Status: Closed[0m
+[0;32mI (110013) Servo Control: Status: Closed[0m
+[0;32mI (110433) Servo Control: Status: Closed[0m
+[0;32mI (110443) Servo Control: Status: Closed[0m
+[0;32mI (110523) Servo Control: Status: Closed[0m
+[0;32mI (110613) Servo Control: Status: Closed[0m
+[0;32mI (110713) Servo Control: Status: Closed[0m
+[0;32mI (110793) Servo Control: Status: Closed[0m
+[0;32mI (110873) Servo Control: Status: Closed[0m
+[0;32mI (110893) Servo Control: Status: Closed[0m
+[0;32mI (110963) Servo Control: Status: Closed[0m
+[0;32mI (111033) Servo Control: Status: Closed[0m
+[0;32mI (111993) Servo Control: Status: Closed[0m
+[0;32mI (112653) Servo Control: Status: Closed[0m
+[0;32mI (113163) Servo Control: Status: Closed[0m
+[0;32mI (113993) Servo Control: Status: Closed[0m
+[0;32mI (114733) Servo Control: Status: Closed[0m
+[0;32mI (115003) Servo Control: Status: Closed[0m
+[0;32mI (115903) Servo Control: Status: Closed[0m
+[0;32mI (116753) Servo Control: Status: Closed[0m
+[0;32mI (116923) Servo Control: Status: Closed[0m
+[0;32mI (118183) Servo Control: Status: Closed[0m
+[0;32mI (119033) Servo Control: Status: Closed[0m
+[0;32mI (119053) Servo Control: Status: Closed[0m
+[0;32mI (119923) Servo Control: Status: Closed[0m
+[0;32mI (120743) Servo Control: Status: Closed[0m
+[0;32mI (120953) Servo Control: Status: Closed[0m
+[0;32mI (121973) Servo Control: Status: Closed[0m
+[0;32mI (122703) Servo Control: Status: Closed[0m
+[0;32mI (122923) Servo Control: Status: Open[0m
+[0;32mI (123403) Servo Control: Status: Open[0m
+[0;32mI (124843) Servo Control: Status: Open[0m
+[0;32mI (124953) Servo Control: Status: Open[0m
+[0;32mI (125573) Servo Control: Status: Open[0m
+[0;32mI (126693) Servo Control: Status: Open[0m
+[0;32mI (126923) Servo Control: Status: Open[0m
+[0;32mI (127403) Servo Control: Status: Open[0m
+[0;32mI (128733) Servo Control: Status: Open[0m
+[0;32mI (128923) Servo Control: Status: Open[0m
+[0;32mI (129353) Servo Control: Status: Open[0m
+[0;32mI (130783) Servo Control: Status: Open[0m
+[0;32mI (130923) Servo Control: Status: Open[0m
+[0;32mI (131503) Servo Control: Status: Open[0m
+[0;32mI (132653) Servo Control: Status: Open[0m
+[0;32mI (132993) Servo Control: Status: Open[0m
+[0;32mI (133103) Servo Control: Closing door (0°)[0m
+[0;32mI (133623) Servo Control: Status: Closed[0m
+[0;32mI (134673) Servo Control: Status: Closed[0m
+[0;32mI (135193) Servo Control: Status: Closed[0m
+[0;32mI (135703) Servo Control: Status: Closed[0m
+[0;32mI (136493) Servo Control: Status: Open[0m
+[0;32mI (136833) Servo Control: Status: Open[0m
+[0;32mI (137033) Servo Control: Status: Open[0m
+[0;32mI (138263) Servo Control: Closing door (0°)[0m
+[0;32mI (138933) Servo Control: Status: Closed[0m
+[0;32mI (139033) Servo Control: Status: Closed[0m
+[0;32mI (140933) Servo Control: Status: Closed[0m
+[0;32mI (140963) Servo Control: Status: Closed[0m
+[0;32mI (143883) Servo Control: Status: Closed[0m
+[0;32mI (144233) Servo Control: Status: Closed[0m
+[0;32mI (145003) Servo Control: Status: Closed[0m
+[0;32mI (146523) Servo Control: Status: Open[0m
+[0;32mI (146993) Servo Control: Status: Open[0m
+[0;32mI (148093) Servo Control: Closing door (0°)[0m
+[0;32mI (148503) Servo Control: Status: Closed[0m
+[0;32mI (148523) Servo Control: Closing door (0°)[0m
+[0;32mI (148533) Servo Control: Status: Closed[0m
+[0;32mI (148543) Servo Control: Status: Closed[0m
+[0;32mI (148563) Servo Control: Status: Closed[0m
+[0;32mI (148573) Servo Control: Status: Closed[0m
+[0;32mI (148623) Servo Control: Status: Closed[0m
+[0;32mI (149003) Servo Control: Status: Closed[0m
+[0;32mI (150753) Servo Control: Status: Closed[0m
+[0;32mI (150963) Servo Control: Status: Closed[0m
+[0;32mI (152803) Servo Control: Status: Closed[0m
+[0;32mI (152963) Servo Control: Status: Closed[0m
+[0;32mI (154683) Servo Control: Status: Closed[0m
+[0;32mI (154963) Servo Control: Status: Closed[0m
+[0;32mI (156613) Servo Control: Status: Closed[0m
+[0;32mI (156963) Servo Control: Status: Closed[0m
+[0;32mI (158633) Servo Control: Status: Closed[0m
+[0;32mI (159053) Servo Control: Status: Closed[0m
+[0;32mI (160583) Servo Control: Status: Closed[0m
+[0;32mI (161183) Servo Control: Status: Closed[0m
+[0;32mI (162633) Servo Control: Status: Closed[0m
+[0;32mI (163053) Servo Control: Status: Closed[0m
+[0;32mI (164573) Servo Control: Status: Closed[0m
+[0;32mI (164783) Servo Control: Status: Closed[0m
+[0;32mI (164963) Servo Control: Status: Closed[0m
+[0;32mI (166933) Servo Control: Status: Closed[0m
+[0;32mI (166963) Servo Control: Status: Closed[0m
+[0;32mI (168673) Servo Control: Status: Closed[0m
+[0;32mI (169313) Servo Control: Status: Closed[0m
+[0;32mI (170923) Servo Control: Status: Closed[0m
+[0;32mI (170963) Servo Control: Status: Closed[0m
+[0;32mI (172663) Servo Control: Status: Closed[0m
+[0;32mI (173083) Servo Control: Status: Closed[0m
+[0;32mI (174883) Servo Control: Status: Closed[0m
+[0;32mI (175033) Servo Control: Status: Closed[0m
+[0;32mI (176663) Servo Control: Status: Closed[0m
+[0;32mI (177163) Servo Control: Status: Closed[0m
+[0;32mI (178813) Servo Control: Status: Closed[0m
+[0;32mI (178963) Servo Control: Status: Closed[0m
+[0;32mI (180693) Servo Control: Status: Closed[0m
+[0;32mI (180963) Servo Control: Status: Closed[0m
+[0;32mI (182693) Servo Control: Status: Closed[0m
+[0;32mI (182963) Servo Control: Status: Closed[0m
+[0;32mI (184743) Servo Control: Status: Closed[0m
+[0;32mI (185083) Servo Control: Status: Closed[0m
+[0;32mI (186803) Servo Control: Status: Closed[0m
+[0;32mI (187003) Servo Control: Status: Closed[0m
+[0;32mI (188943) Servo Control: Status: Closed[0m
+[0;32mI (188963) Servo Control: Status: Closed[0m
+[0;32mI (190983) Servo Control: Status: Closed[0m
+[0;32mI (191203) Servo Control: Status: Closed[0m
+[0;32mI (192753) Servo Control: Status: Closed[0m
+[0;32mI (193323) Servo Control: Status: Closed[0m
+[0;32mI (194983) Servo Control: Status: Closed[0m
+[0;32mI (197003) Servo Control: Status: Closed[0m
+[0;32mI (198963) Servo Control: Status: Closed[0m
+[0;32mI (201083) Servo Control: Status: Closed[0m
+[0;32mI (203193) Servo Control: Status: Closed[0m
+[0;32mI (204973) Servo Control: Status: Closed[0m
+[0;32mI (207583) Servo Control: Status: Closed[0m
+[0;32mI (209093) Servo Control: Status: Closed[0m
+[0;32mI (211193) Servo Control: Status: Closed[0m
+[0;32mI (213633) Servo Control: Status: Closed[0m
+[0;32mI (215143) Servo Control: Status: Closed[0m
+[0;32mI (216833) Servo Control: Status: Closed[0m
+[0;32mI (217033) Servo Control: Status: Closed[0m
+[0;32mI (218973) Servo Control: Status: Closed[0m
+[0;32mI (221613) Servo Control: Status: Closed[0m
+[0;32mI (223173) Servo Control: Status: Closed[0m
+[0;32mI (223383) Servo Control: Status: Closed[0m
+[0;32mI (224783) Servo Control: Status: Closed[0m
+[0;32mI (224793) Servo Control: Status: Closed[0m
+[0;32mI (225313) Servo Control: Status: Closed[0m
+[0;32mI (226933) Servo Control: Status: Closed[0m
+[0;32mI (226983) Servo Control: Status: Closed[0m
+[0;32mI (228993) Servo Control: Status: Closed[0m
+[0;32mI (228993) Servo Control: Status: Closed[0m
+[0;32mI (230763) Servo Control: Status: Closed[0m
+[0;32mI (231103) Servo Control: Status: Closed[0m
+[0;32mI (233433) Servo Control: Status: Closed[0m
+[0;32mI (233453) Servo Control: Status: Closed[0m
+[0;32mI (235233) Servo Control: Status: Closed[0m
+[0;32mI (236203) Servo Control: Status: Closed[0m
+[0;32mI (237183) Servo Control: Status: Closed[0m
+[0;32mI (238893) Servo Control: Status: Closed[0m
+[0;32mI (239153) Servo Control: Status: Closed[0m
+[0;32mI (241013) Servo Control: Status: Closed[0m
+[0;32mI (242183) Servo Control: Status: Closed[0m
+[0;32mI (242983) Servo Control: Status: Closed[0m
+[0;32mI (245183) Servo Control: Status: Closed[0m
+[0;32mI (248293) Servo Control: Status: Closed[0m
+[0;32mI (248973) Servo Control: Status: Closed[0m
+[0;32mI (250503) Servo Control: Status: Closed[0m
+[0;32mI (251243) Servo Control: Status: Closed[0m
+[0;32mI (251573) Servo Control: Status: Closed[0m
+[0;32mI (252493) Servo Control: Status: Closed[0m
+[0;32mI (253233) Servo Control: Status: Closed[0m
+[0;32mI (255613) Servo Control: Status: Closed[0m
+[0;32mI (258063) Servo Control: Status: Closed[0m
+[0;32mI (258253) Servo Control: Status: Closed[0m
+[0;32mI (258253) Servo Control: Status: Closed[0m
+[0;32mI (258933) Servo Control: Status: Closed[0m
+[0;32mI (259133) Servo Control: Status: Closed[0m
+[0;32mI (259613) Servo Control: Status: Closed[0m
+[0;32mI (260053) Servo Control: Status: Closed[0m
+[0;32mI (261523) Servo Control: Status: Closed[0m
+[0;32mI (263673) Servo Control: Status: Closed[0m
+[0;32mI (265343) Servo Control: Status: Closed[0m
+[0;32mI (267193) Servo Control: Status: Closed[0m
+[0;32mI (269163) Servo Control: Status: Closed[0m
+[0;32mI (270983) Servo Control: Status: Closed[0m
+[0;32mI (273083) Servo Control: Status: Closed[0m
+[0;32mI (275313) Servo Control: Status: Closed[0m
+[0;32mI (277263) Servo Control: Status: Closed[0m
+[0;32mI (279133) Servo Control: Status: Closed[0m
+[0;32mI (281143) Servo Control: Status: Closed[0m
+[0;32mI (283063) Servo Control: Status: Closed[0m
+[0;32mI (285083) Servo Control: Status: Closed[0m
+[0;32mI (285453) Servo Control: Status: Closed[0m
+[0;32mI (285463) Servo Control: Status: Closed[0m
+[0;32mI (287163) Servo Control: Status: Closed[0m
+[0;32mI (289123) Servo Control: Status: Closed[0m
+[0;32mI (290973) Servo Control: Status: Closed[0m
+[0;32mI (293253) Servo Control: Status: Closed[0m
+[0;32mI (295053) Servo Control: Status: Closed[0m
+[0;32mI (297293) Servo Control: Status: Closed[0m
+[0;32mI (299033) Servo Control: Status: Closed[0m
+[0;32mI (301323) Servo Control: Status: Closed[0m
+[0;32mI (303043) Servo Control: Status: Closed[0m
+[0;32mI (305173) Servo Control: Status: Closed[0m
+[0;32mI (307233) Servo Control: Status: Closed[0m
+[0;32mI (309063) Servo Control: Status: Closed[0m
+[0;32mI (311223) Servo Control: Status: Closed[0m
+[0;32mI (313063) Servo Control: Status: Closed[0m
+[0;32mI (315133) Servo Control: Status: Closed[0m
+[0;32mI (317563) Servo Control: Status: Closed[0m
+[0;32mI (318993) Servo Control: Status: Closed[0m
+[0;32mI (321073) Servo Control: Status: Closed[0m
+[0;32mI (323093) Servo Control: Status: Closed[0m
+[0;32mI (325043) Servo Control: Status: Closed[0m
+[0;32mI (327093) Servo Control: Status: Closed[0m
+[0;32mI (329033) Servo Control: Status: Closed[0m
+[0;32mI (331083) Servo Control: Status: Closed[0m
+[0;32mI (333033) Servo Control: Status: Closed[0m
+[0;32mI (335133) Servo Control: Status: Closed[0m
+[0;32mI (337103) Servo Control: Status: Closed[0m
+[0;32mI (339303) Servo Control: Status: Closed[0m
+[0;32mI (341023) Servo Control: Status: Closed[0m
+[0;32mI (343063) Servo Control: Status: Closed[0m
+[0;32mI (344663) Servo Control: Status: Closed[0m
+[0;32mI (344663) Servo Control: Status: Closed[0m
+[0;32mI (344983) Servo Control: Status: Closed[0m
+[0;32mI (347373) Servo Control: Status: Closed[0m
+[0;32mI (349623) Servo Control: Status: Closed[0m
+[0;32mI (351053) Servo Control: Status: Closed[0m
+[0;32mI (353093) Servo Control: Status: Closed[0m
+[0;32mI (355253) Servo Control: Status: Closed[0m
+[0;32mI (357193) Servo Control: Status: Closed[0m
+[0;32mI (359153) Servo Control: Status: Closed[0m
+[0;32mI (361183) Servo Control: Status: Closed[0m
+[0;32mI (363133) Servo Control: Status: Closed[0m
+[0;32mI (365183) Servo Control: Status: Closed[0m
+[0;32mI (367233) Servo Control: Status: Closed[0m
+[0;32mI (369173) Servo Control: Status: Closed[0m
+[0;32mI (371213) Servo Control: Status: Closed[0m
+[0;32mI (373273) Servo Control: Status: Closed[0m
+[0;32mI (375413) Servo Control: Status: Closed[0m
+[0;32mI (377363) Servo Control: Status: Closed[0m
+[0;32mI (379313) Servo Control: Status: Closed[0m
+[0;32mI (381373) Servo Control: Status: Closed[0m
+[0;32mI (383413) Servo Control: Status: Closed[0m
+[0;32mI (385353) Servo Control: Status: Closed[0m
+[0;32mI (387293) Servo Control: Status: Closed[0m
+[0;32mI (389453) Servo Control: Status: Closed[0m
+[0;32mI (391293) Servo Control: Status: Closed[0m
+[0;32mI (392833) Servo Control: Status: Closed[0m
+[0;32mI (393333) Servo Control: Status: Closed[0m
+[0;32mI (394873) Servo Control: Status: Closed[0m
+[0;32mI (395393) Servo Control: Status: Closed[0m
+[0;32mI (396693) Servo Control: Status: Closed[0m
+[0;32mI (397343) Servo Control: Status: Closed[0m
+[0;32mI (398583) Servo Control: Status: Closed[0m
+[0;32mI (399383) Servo Control: Status: Closed[0m
+[0;32mI (400193) Servo Control: Status: Open[0m
+[0;32mI (401323) Servo Control: Status: Open[0m
+[0;32mI (401843) Servo Control: Closing door (0°)[0m
+[0;32mI (402043) Servo Control: Status: Closed[0m
+[0;32mI (403273) Servo Control: Status: Closed[0m
+[0;32mI (404093) Servo Control: Status: Closed[0m
+[0;32mI (404653) Servo Control: Status: Closed[0m
+[0;32mI (406703) Servo Control: Status: Closed[0m
+[0;32mI (406713) Servo Control: Status: Closed[0m
+[0;32mI (406933) Servo Control: Status: Closed[0m
+[0;32mI (407273) Servo Control: Status: Closed[0m
+[0;32mI (409003) Servo Control: Status: Closed[0m
+[0;32mI (409313) Servo Control: Status: Closed[0m
+[0;32mI (410983) Servo Control: Status: Closed[0m
+[0;32mI (411353) Servo Control: Status: Closed[0m
+[0;32mI (412993) Servo Control: Status: Closed[0m
+[0;32mI (413253) Servo Control: Status: Closed[0m
+[0;32mI (415063) Servo Control: Status: Closed[0m
+[0;32mI (415563) Servo Control: Status: Closed[0m
+[0;32mI (416913) Servo Control: Status: Closed[0m
+[0;32mI (417503) Servo Control: Status: Closed[0m
+[0;32mI (418933) Servo Control: Status: Closed[0m
+[0;32mI (419553) Servo Control: Status: Closed[0m
+[0;32mI (420983) Servo Control: Status: Closed[0m
+[0;32mI (421603) Servo Control: Status: Closed[0m
+[0;32mI (423103) Servo Control: Status: Closed[0m
+[0;32mI (423553) Servo Control: Status: Closed[0m
+[0;32mI (424983) Servo Control: Status: Closed[0m
+[0;32mI (425593) Servo Control: Status: Closed[0m
+[0;32mI (426923) Servo Control: Status: Closed[0m
+[0;32mI (427543) Servo Control: Status: Closed[0m
+[0;32mI (428973) Servo Control: Status: Closed[0m
+[0;32mI (429583) Servo Control: Status: Closed[0m
+[0;32mI (430923) Servo Control: Status: Closed[0m
+[0;32mI (431533) Servo Control: Status: Closed[0m
+[0;32mI (432913) Servo Control: Status: Closed[0m
+[0;32mI (433583) Servo Control: Status: Closed[0m
+[0;32mI (435023) Servo Control: Status: Closed[0m
+[0;32mI (435633) Servo Control: Status: Closed[0m
+[0;32mI (436963) Servo Control: Status: Closed[0m
+[0;32mI (437523) Servo Control: Status: Closed[0m
+[0;32mI (440143) Servo Control: Status: Closed[0m
+[0;32mI (441583) Servo Control: Status: Closed[0m
+[0;32mI (443513) Servo Control: Status: Closed[0m
+[0;32mI (445563) Servo Control: Status: Closed[0m
+[0;32mI (447503) Servo Control: Status: Closed[0m
+[0;32mI (447993) Servo Control: Status: Closed[0m
+[0;32mI (448083) Servo Control: Status: Closed[0m
+[0;32mI (448163) Servo Control: Status: Closed[0m
+[0;32mI (448233) Servo Control: Status: Closed[0m
+[0;32mI (448333) Servo Control: Status: Closed[0m
+[0;32mI (448903) Servo Control: Status: Closed[0m
+[0;32mI (449553) Servo Control: Status: Closed[0m
+[0;32mI (450993) Servo Control: Status: Closed[0m
+[0;32mI (451613) Servo Control: Status: Closed[0m
+[0;32mI (452933) Servo Control: Status: Closed[0m
+[0;32mI (453553) Servo Control: Status: Closed[0m
+[0;32mI (455103) Servo Control: Status: Closed[0m
+[0;32mI (455703) Servo Control: Status: Closed[0m
+[0;32mI (457073) Servo Control: Status: Closed[0m
+[0;32mI (457973) Servo Control: Status: Closed[0m
+[0;32mI (460313) Servo Control: Status: Closed[0m
+[0;32mI (461813) Servo Control: Status: Closed[0m
+[0;32mI (463793) Servo Control: Status: Closed[0m
+[0;32mI (464793) Servo Control: Status: Closed[0m
+[0;32mI (465943) Servo Control: Status: Closed[0m
+[0;32mI (467503) Servo Control: Status: Closed[0m
+[0;32mI (467623) Servo Control: Status: Closed[0m
+[0;32mI (467703) Servo Control: Status: Closed[0m
+[0;32mI (467793) Servo Control: Status: Closed[0m
+[0;32mI (467903) Servo Control: Status: Closed[0m
+[0;32mI (467993) Servo Control: Status: Closed[0m
+[0;32mI (469013) Servo Control: Status: Closed[0m
+[0;32mI (470173) Servo Control: Status: Closed[0m
+[0;32mI (471063) Servo Control: Status: Closed[0m
+[0;32mI (472293) Servo Control: Status: Closed[0m
+[0;32mI (473013) Servo Control: Status: Closed[0m
+[0;32mI (474333) Servo Control: Status: Closed[0m
+[0;32mI (474953) Servo Control: Status: Closed[0m
+[0;32mI (476593) Servo Control: Status: Closed[0m
+[0;32mI (476913) Servo Control: Status: Closed[0m
+[0;32mI (478653) Servo Control: Status: Closed[0m
+[0;32mI (478943) Servo Control: Status: Closed[0m
+[0;32mI (480783) Servo Control: Status: Closed[0m
+[0;32mI (481103) Servo Control: Status: Closed[0m
+[0;32mI (482853) Servo Control: Status: Closed[0m
+[0;32mI (482903) Servo Control: Status: Closed[0m
+[0;32mI (485193) Servo Control: Status: Closed[0m
+[0;32mI (485203) Servo Control: Status: Closed[0m
+[0;32mI (486933) Servo Control: Status: Closed[0m
+[0;32mI (486943) Servo Control: Status: Closed[0m
+[0;32mI (488983) Servo Control: Status: Closed[0m
+[0;32mI (488983) Servo Control: Status: Closed[0m

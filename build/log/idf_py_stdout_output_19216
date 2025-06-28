@@ -1,0 +1,281 @@
++
+B��J���� chip revisiets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15532
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.2-dirty 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jun 23 2025 12:13:59[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v3.1[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (42) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (94) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=25bd4h (154580) map[0m
+[0;32mI (156) esp_image: segment 1: paddr=00035bfc vaddr=3ffb0000 size=03c74h ( 15476) load[0m
+[0;32mI (162) esp_image: segment 2: paddr=00039878 vaddr=40080000 size=067a0h ( 26528) load[0m
+[0;32mI (172) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=93ab4h (604852) map[0m
+[0;32mI (380) esp_image: segment 4: paddr=000d3adc vaddr=400867a0 size=10108h ( 65800) load[0m
+[0;32mI (417) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (417) boot: Disabling RNG early entropy source...[0m
+[0;32mI (429) cpu_start: Multicore app[0m
+[0;32mI (438) cpu_start: Pro cpu start user code[0m
+[0;32mI (438) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (438) cpu_start: Application information:[0m
+[0;32mI (441) cpu_start: Project name:     app-template[0m
+[0;32mI (446) cpu_start: App version:      1[0m
+[0;32mI (450) cpu_start: Compile time:     Jun 23 2025 14:28:23[0m
+[0;32mI (457) cpu_start: ELF file SHA256:  23b5fd41b...[0m
+[0;32mI (462) cpu_start: ESP-IDF:          v5.2-dirty[0m
+[0;32mI (467) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (472) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (477) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (482) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (489) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (495) heap_init: At 3FFB86C8 len 00027938 (158 KiB): DRAM[0m
+[0;32mI (501) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (507) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (514) heap_init: At 400968A8 len 00009758 (37 KiB): IRAM[0m
+[0;32mI (521) spi_flash: detected chip: generic[0m
+[0;32mI (525) spi_flash: flash io: dio[0m
+[0;33mW (528) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (543) main_task: Started on CPU0[0m
+[0;32mI (553) main_task: Calling app_main()[0m
+[0;32mI (583) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+I (593) wifi:wifi driver task: 3ffc06c0, prio:23, stack:6656, core=0
+I (603) wifi:wifi firmware version: cc1dd81
+I (603) wifi:wifi certification version: v7.0
+I (613) wifi:config NVS flash: enabled
+I (613) wifi:config nano formating: disabled
+I (613) wifi:Init data frame dynamic rx buffer num: 32
+I (613) wifi:Init static rx mgmt buffer num: 5
+I (623) wifi:Init management short buffer num: 32
+I (623) wifi:Init dynamic tx buffer num: 32
+I (633) wifi:Init static rx buffer size: 1600
+I (633) wifi:Init static rx buffer num: 10
+I (633) wifi:Init dynamic rx buffer num: 32
+[0;32mI (643) wifi_init: rx ba win: 6[0m
+[0;32mI (643) wifi_init: tcpip mbox: 32[0m
+[0;32mI (653) wifi_init: udp mbox: 6[0m
+[0;32mI (653) wifi_init: tcp mbox: 6[0m
+[0;32mI (653) wifi_init: tcp tx win: 5760[0m
+[0;32mI (663) wifi_init: tcp rx win: 5760[0m
+[0;32mI (663) wifi_init: tcp mss: 1440[0m
+[0;32mI (673) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (673) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (683) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (773) wifi:mode : sta (00:4b:12:24:76:40)
+I (773) wifi:enable tsf
+I (793) wifi:new:<7,0>, old:<1,0>, ap:<255,255>, sta:<7,0>, prof:1
+I (803) wifi:state: init -> auth (b0)
+I (813) wifi:state: auth -> assoc (0)
+I (813) wifi:state: assoc -> run (10)
+W (833) wifi:[ADDBA]rx delba, code:39, delete tid:0
+W (843) wifi:[ADDBA]rx delba, code:39, delete tid:0
+W (843) wifi:[ADDBA]rx delba, code:39, delete tid:5
+I (853) wifi:<ba-add>idx:0 (ifx:0, c0:06:c3:97:1d:51), tid:5, ssn:151, winSize:64
+I (923) wifi:connected with FutureLab2103, aid = 11, channel 7, BW20, bssid = c0:06:c3:97:1d:51
+I (923) wifi:security: WPA2-PSK, phy: bgn, rssi: -59
+I (933) wifi:pm start, type: 1
+
+I (933) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (943) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (1053) wifi:<ba-add>idx:1 (ifx:0, c0:06:c3:97:1d:51), tid:0, ssn:179, winSize:64
+[0;32mI (3453) esp_netif_handlers: sta ip: 192.168.31.107, mask: 255.255.255.0, gw: 192.168.31.1[0m
+[0;32mI (5783) mdns_mem: mDNS task will be created from internal RAM[0m
+[0;32mI (5783) Servo Control: Access via: http://esp32-door.local[0m
+[0;32mI (5793) main_task: Returned from app_main()[0m
+[0;32mI (5993) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (6093) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (6123) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (6133) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (6703) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (7703) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (7903) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (7963) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (8033) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (9533) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (9543) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (9623) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (9693) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (9763) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (9833) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (9933) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (10013) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (10463) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (10573) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (10653) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (10733) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (10833) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (11703) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (11783) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;33mW (12203) httpd_uri: httpd_uri: URI '//' not found[0m
+[0;33mW (12203) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (13423) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (13743) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (14493) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (14833) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (15383) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (15793) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (16603) Servo Control: Opening door (180°)[0m
+[0;32mI (16613) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (16773) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (16833) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (17233) Servo Control: Opening door (180°)[0m
+[0;32mI (17633) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (18963) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (18963) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (19163) Servo Control: Closing door (0°)[0m
+[0;32mI (19363) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (22393) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (22403) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (22573) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (22793) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (22843) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (24593) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (24803) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (24833) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (26533) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (26823) Servo Control: Opening door (180°)[0m
+[0;32mI (26833) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (26833) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (27023) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (28583) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (28893) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (29013) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (30653) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (31193) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (31193) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (33673) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (33673) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (33683) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (33843) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (34723) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (34893) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (35853) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (36783) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (36833) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (37903) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (38923) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (38933) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (39853) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (40663) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (40983) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (42003) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (42923) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (43003) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (44873) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (44883) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (45043) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (46893) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (46903) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (47113) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (48873) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (48883) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (49323) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (49493) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (51513) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (51523) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (51943) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (52863) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (52873) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (53883) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (54903) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (54923) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (55933) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (56943) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (56953) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (57993) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (58903) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (58913) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (59933) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (60823) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (60833) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (62003) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (62913) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (62913) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (63993) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (64963) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (64973) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (65993) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (66883) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (66893) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (66903) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (68033) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (68983) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (68993) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (70073) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (70883) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (70893) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (72103) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (72833) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (72833) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (74053) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (76033) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (78063) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (79363) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (79563) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (79703) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (80133) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (80743) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (80913) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (80993) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (82043) Servo Control: Opening door (180°)[0m
+[0;32mI (82053) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (82353) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (82863) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (83233) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (83473) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (83583) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (84303) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (85033) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (85043) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (86853) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (86863) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (86953) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (89003) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (89013) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (89013) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (90953) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (90963) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (90963) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (92913) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (92923) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (93573) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (94943) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (94953) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (94983) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (96893) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (96903) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (97293) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (98853) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (98863) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (98993) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (100883) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (100893) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (101003) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (103033) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (105093) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (107053) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (109103) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (111033) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (113273) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (115093) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (117163) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (119293) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (121273) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (123203) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
+[0;32mI (125253) Servo Control: LED GPIO Level: 0 → Status: Closed[0m
